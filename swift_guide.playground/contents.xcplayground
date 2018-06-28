@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios'>
+    <pages>
+        <page name='HotKeys'/>
+        <page name='ObjectInfo'/>
+        <page name='Variables'/>
+        <page name='Integers'/>
+        <page name='FloatAndDouble'/>
+        <page name='Boolean'/>
+        <page name='String'/>
+        <page name='Array'/>
+        <page name='Dictionary'/>
+        <page name='Set'/>
+        <page name='Optional (in progress)'/>
+        <page name='IfElse'/>
+        <page name='Switch (in progress)'/>
+        <page name='For'/>
+        <page name='While'/>
+        <page name='Functions'/>
+        <page name='Guard (in progress)'/>
+    </pages>
+</playground>
