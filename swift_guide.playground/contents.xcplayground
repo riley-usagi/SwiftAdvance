@@ -11,6 +11,7 @@
         <page name='Array'/>
         <page name='Dictionary'/>
         <page name='Set'/>
+        <page name='Tuple (in progress)'/>
         <page name='Optional (in progress)'/>
         <page name='Guard (in progress)'/>
         <page name='IfElse'/>
