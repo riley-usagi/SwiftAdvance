@@ -12,11 +12,27 @@
         <page name='Dictionary'/>
         <page name='Set'/>
         <page name='Optional (in progress)'/>
+        <page name='Guard (in progress)'/>
         <page name='IfElse'/>
         <page name='Switch (in progress)'/>
         <page name='For'/>
         <page name='While'/>
         <page name='Functions'/>
-        <page name='Guard (in progress)'/>
+        <page name='Enum (in progress)'/>
+        <page name='Structure (in progress)'/>
+        <page name='Class (in progress)'/>
+        <page name='Closure (in progress)'/>
+        <page name='CodableEncodableDecodable (jn progress)'/>
+        <page name='Protocol (in progress)'/>
+        <page name='Extension (in progress)'/>
+        <page name='Game (alpha) (in progress)'/>
+        <page name='Game (beta) (in progress)'/>
+        <page name='Game (final) (in progress)'/>
+        <page name='Game (release candidate)'/>
+        <page name='Generic (in progress)'/>
+        <page name='TryCatch (in progress)'/>
+        <page name='Error (in progress)'/>
+        <page name='Realm (in progress)'/>
+        <page name='TensorFlow (in progress)'/>
     </pages>
 </playground>
