@@ -19,3 +19,7 @@
 * [ ] Optional
 * [ ] Guard
 * [x] [If Else](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/IfElse.xcplaygroundpage/Contents.swift)
+* [ ] Switch
+* [x] [For](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/For.xcplaygroundpage/Contents.swift)
+  * [Stride](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/For.xcplaygroundpage/Contents.swift#L33)
+  * [Where](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/For.xcplaygroundpage/Contents.swift#L54)
