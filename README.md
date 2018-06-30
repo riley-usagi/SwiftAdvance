@@ -34,3 +34,20 @@
 * [x] [Enum](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Enum.xcplaygroundpage/Contents.swift)
   * [Перечисления со значениями](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Enum.xcplaygroundpage/Contents.swift#L31)
   * [Связанные значения](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Enum.xcplaygroundpage/Contents.swift#L50)
+* [ ] Structure
+* [ ] Class
+* [ ] Closure
+* [ ] Extension
+* [ ] Protocol
+* [ ] Generic
+* [ ] Error
+* [ ] Try / Catch
+* [ ] Codable, Encodable, Decodable
+* [ ] Alamofire
+* [ ] Realm
+* [ ] Vapor
+* [ ] Game (alpha)
+* [ ] Game (beta)
+* [ ] Game (release candidate)
+* [ ] Game (final)
+* [ ] TensorFlow
