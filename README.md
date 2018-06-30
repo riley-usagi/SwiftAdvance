@@ -10,3 +10,4 @@
   * [Константа](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Variables.xcplaygroundpage/Contents.swift#L17)
 * [x] [Integers](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Integers.xcplaygroundpage/Contents.swift)
 * [x] [Float и Double](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/FloatAndDouble.xcplaygroundpage/Contents.swift)
+* [x] [Boolean](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Boolean.xcplaygroundpage/Contents.swift)
