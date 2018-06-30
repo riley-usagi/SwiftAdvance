@@ -18,23 +18,24 @@
         <page name='Switch (in progress)'/>
         <page name='For'/>
         <page name='While'/>
-        <page name='Functions'/>
+        <page name='Function'/>
         <page name='Enum'/>
         <page name='Structure (in progress)'/>
         <page name='Class (in progress)'/>
         <page name='Closure (in progress)'/>
-        <page name='Protocol (in progress)'/>
         <page name='Extension (in progress)'/>
+        <page name='Protocol (in progress)'/>
         <page name='Generic (in progress)'/>
         <page name='Error (in progress)'/>
         <page name='TryCatch (in progress)'/>
         <page name='CodableEncodableDecodable (jn progress)'/>
         <page name='Alamofire (in progress)'/>
         <page name='Realm (in progress)'/>
+        <page name='Vapor (in progress)'/>
         <page name='Game (alpha) (in progress)'/>
         <page name='Game (beta) (in progress)'/>
+        <page name='Game (release candidate) (in progress)'/>
         <page name='Game (final) (in progress)'/>
-        <page name='Game (release candidate)'/>
         <page name='TensorFlow (in progress)'/>
     </pages>
 </playground>
