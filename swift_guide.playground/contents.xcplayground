@@ -5,9 +5,9 @@
         <page name='ObjectInfo'/>
         <page name='Variables'/>
         <page name='Integers'/>
+        <page name='String'/>
         <page name='FloatAndDouble'/>
         <page name='Boolean'/>
-        <page name='String'/>
         <page name='Array'/>
         <page name='Dictionary'/>
         <page name='Set'/>
