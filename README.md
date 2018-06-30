@@ -8,3 +8,5 @@
 * [x] [Переменные и константы](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Variables.xcplaygroundpage/Contents.swift)
   * [Переменная](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Variables.xcplaygroundpage/Contents.swift#L8)
   * [Константа](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Variables.xcplaygroundpage/Contents.swift#L17)
+* [Integers](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Integers.xcplaygroundpage/Contents.swift)
+* [Float и Double](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/FloatAndDouble.xcplaygroundpage/Contents.swift)
