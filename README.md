@@ -31,3 +31,6 @@
   * [Необязательные параметры](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Functions.xcplaygroundpage/Contents.swift#L45)
   * [Стандартное значение параметра](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Functions.xcplaygroundpage/Contents.swift#L68)
   * [Inout](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Functions.xcplaygroundpage/Contents.swift#L101)
+* [x] [Enum](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Enum.xcplaygroundpage/Contents.swift)
+  * [Перечисления со значениями](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Enum.xcplaygroundpage/Contents.swift#L31)
+  * [Связанные значения](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Enum.xcplaygroundpage/Contents.swift#L50)
