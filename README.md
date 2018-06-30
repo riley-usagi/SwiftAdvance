@@ -27,7 +27,7 @@
   * [Repeat while](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/While.xcplaygroundpage/Contents.swift#L30)
   * [Continue](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/While.xcplaygroundpage/Contents.swift#L50)
   * [Break](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/While.xcplaygroundpage/Contents.swift#L72)
-* [Function](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Functions.xcplaygroundpage/Contents.swift)
+* [x] [Function](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Functions.xcplaygroundpage/Contents.swift)
   * [Необязательные параметры](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Functions.xcplaygroundpage/Contents.swift#L45)
   * [Стандартное значение параметра](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Functions.xcplaygroundpage/Contents.swift#L68)
   * [Inout](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Functions.xcplaygroundpage/Contents.swift#L101)
