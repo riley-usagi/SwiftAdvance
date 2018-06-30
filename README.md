@@ -23,3 +23,7 @@
 * [x] [For](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/For.xcplaygroundpage/Contents.swift)
   * [Stride](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/For.xcplaygroundpage/Contents.swift#L33)
   * [Where](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/For.xcplaygroundpage/Contents.swift#L54)
+* [x] [While](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/While.xcplaygroundpage/Contents.swift)
+  * [Repeat while](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/While.xcplaygroundpage/Contents.swift#L30)
+  * [Continue](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/While.xcplaygroundpage/Contents.swift#L50)
+  * [Break](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/While.xcplaygroundpage/Contents.swift#L72)
