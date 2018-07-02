@@ -41,6 +41,7 @@
   * [x] Конструкторы
   * [x] Опциональный конструктор
 * [ ] Class
+* [ ] ARC
 * [ ] Closure
 * [ ] Extension
 * [ ] Protocol
