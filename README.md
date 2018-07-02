@@ -26,7 +26,7 @@
 * [x] [While](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/While.xcplaygroundpage/Contents.swift)
   * [x] Repeat while
   * [x] Continue
-  * Break
+  * [x] Break
 * [x] [Function](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Function.xcplaygroundpage/Contents.swift)
   * [x] Необязательные параметры
   * [x] Стандартное значение параметра
