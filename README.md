@@ -34,7 +34,12 @@
 * [x] [Enum](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Enum.xcplaygroundpage/Contents.swift)
   * [Перечисления со значениями](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Enum.xcplaygroundpage/Contents.swift#L31)
   * [Связанные значения](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Enum.xcplaygroundpage/Contents.swift#L50)
-* [x] Structure
+* [ ] Structure
+  * [ ] [Вычисляемые свойства](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Structure%20(in%20progress).xcplaygroundpage/Contents.swift#L61)
+  * [x] [Наблюдатели свойств](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Structure%20(in%20progress).xcplaygroundpage/Contents.swift#L86)
+  * [x] [Методы](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Structure%20(in%20progress).xcplaygroundpage/Contents.swift#L127)
+  * [x] [Конструкторы](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Structure%20(in%20progress).xcplaygroundpage/Contents.swift#L155)
+  * [x] [Опциональный конструктор](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Structure%20(in%20progress).xcplaygroundpage/Contents.swift#L186)
 * [ ] Class
 * [ ] Closure
 * [ ] Extension
