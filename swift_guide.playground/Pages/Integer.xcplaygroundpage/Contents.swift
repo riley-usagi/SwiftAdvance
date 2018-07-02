@@ -1,4 +1,4 @@
-//: [Previous](@previous)
+//: [Назад](@previous)
 
 import Foundation
 
@@ -55,4 +55,4 @@ var monsterAtk: Int = Int(arc4random_uniform(5) + 12)
 //: ### Домашнее задание
 //: Попрактикуйтесь с созданием численных переменных.
 
-//: [Next](@next)
+//: [Вперёд](@next)
