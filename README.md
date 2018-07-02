@@ -31,10 +31,10 @@
   * [x] Необязательные параметры
   * [x] Стандартное значение параметра
   * [x] Inout
-* [x] Enum
+* [x] [Enum](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Enum.xcplaygroundpage/Contents.swift)
   * [x] Перечисления со значениями
   * [x] Связанные значения
-* [ ] Structure
+* [ ] [Structure](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Structure%20(in%20progress).xcplaygroundpage/Contents.swift)
   * [ ] Вычисляемые свойства
   * [x] Наблюдатели свойств
   * [x] Методы
