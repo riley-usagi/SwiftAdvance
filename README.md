@@ -40,7 +40,7 @@
   * [x] Методы
   * [x] Конструкторы
   * [x] Опциональный конструктор
-* [x] Class
+* [x] [Class](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Class.xcplaygroundpage/Contents.swift)
 * [ ] ARC
 * [ ] Closure
 * [ ] Extension
