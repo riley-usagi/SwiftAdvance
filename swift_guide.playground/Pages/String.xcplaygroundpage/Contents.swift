@@ -28,5 +28,3 @@ let mySubstring = newString[range]
 //: Попрактикуйтесь в работе со строками.
 
 //: [Next](@next)
-
-
