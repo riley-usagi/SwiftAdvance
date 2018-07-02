@@ -23,10 +23,10 @@
         <page name='Structure (in progress)'/>
         <page name='Class'/>
         <page name='ARC (in progress)'/>
-        <page name='Closure (in progress)'/>
-        <page name='Extension (in progress)'/>
         <page name='Protocol (in progress)'/>
+        <page name='Extension (in progress)'/>
         <page name='Generic (in progress)'/>
+        <page name='Closure (in progress)'/>
         <page name='Error (in progress)'/>
         <page name='TryCatch (in progress)'/>
         <page name='CodableEncodableDecodable (jn progress)'/>
