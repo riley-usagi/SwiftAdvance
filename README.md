@@ -49,7 +49,7 @@
 * [x] [Class](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Class.xcplaygroundpage/Contents.swift)
 * [ ] ARC
 * [x] [Protocol](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Protocol.xcplaygroundpage/Contents.swift)
-* [ ] Extension
+* [x] [Extension](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Extension.xcplaygroundpage/Contents.swift)
 * [ ] Generic
 * [ ] Closure
 * [ ] Error
