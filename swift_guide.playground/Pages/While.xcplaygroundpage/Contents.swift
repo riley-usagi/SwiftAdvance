@@ -92,4 +92,4 @@ while let inNiflheimMonster = niflheimIterator.next() {
 
 // Создайте несколько своих циклов для практики.
 
-//: [Next](@next)
+//: [Вперёд](@next)

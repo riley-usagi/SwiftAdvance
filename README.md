@@ -1,6 +1,12 @@
 # swift_guide
 Мой собственный учебник по основам Swift
 
+> *Note:* Чтобы оформление Playground-файла было как на изображении ниже (если вдруг оно отключено), вам необходимо его включить в меню: **Editor -> Show Rendered Markup**
+
+![](example.png)
+
+# Roadmap
+
 * [x] [Hot keys](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/HotKeys.xcplaygroundpage/Contents.swift)
   * [x] Вступление
   * [x] Горячие клавиши
@@ -42,10 +48,10 @@
   * [x] Опциональный конструктор
 * [x] [Class](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Class.xcplaygroundpage/Contents.swift)
 * [ ] ARC
-* [ ] Closure
+* [x] [Protocol](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Protocol.xcplaygroundpage/Contents.swift)
 * [ ] Extension
-* [ ] Protocol
 * [ ] Generic
+* [ ] Closure
 * [ ] Error
 * [ ] Try / Catch
 * [ ] Codable, Encodable, Decodable
