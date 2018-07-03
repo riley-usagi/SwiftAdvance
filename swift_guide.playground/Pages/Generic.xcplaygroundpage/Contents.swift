@@ -37,8 +37,6 @@ class Bow: Named {
   }
 }
 
-
-
 var bows    = Weapons<Bow>()
 var swords  = Weapons<Sword>()
 
