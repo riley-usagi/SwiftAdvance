@@ -50,7 +50,7 @@
 * [ ] ARC
 * [x] [Protocol](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Protocol.xcplaygroundpage/Contents.swift)
 * [x] [Extension](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Extension.xcplaygroundpage/Contents.swift)
-* [ ] Generic
+* [x] [Generic](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Generic.xcplaygroundpage/Contents.swift)
 * [ ] Closure
 * [ ] Error
 * [ ] Try / Catch
