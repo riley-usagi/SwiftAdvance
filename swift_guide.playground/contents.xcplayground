@@ -27,7 +27,7 @@
         <page name='Extension'/>
         <page name='Generic'/>
         <page name='Closure (in progress)'/>
-        <page name='Error (in progress)'/>
+        <page name='Error'/>
         <page name='TryCatch (in progress)'/>
         <page name='CodableEncodableDecodable (jn progress)'/>
         <page name='Alamofire (in progress)'/>
