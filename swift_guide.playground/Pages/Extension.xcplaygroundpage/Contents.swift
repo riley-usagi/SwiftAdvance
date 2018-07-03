@@ -8,40 +8,25 @@ import Foundation
  > 2. Вспомогательные конструкторы *(инициализаторы)*
  > 3. Вычисляемые свойства
  */
-protocol Novice {
-  var hp: Int { get set }
-  init(hp: Int)
-  func firstAid ()
-}
 
-protocol Merchant {
-  func identify(item: String)
-}
-
-class Hero {
-  required init(hp: Int) {
-    self.hp = hp
-  }
-}
-//: > Ещё один важный момент: Одно из главных преимуществ *Расширений* заключается в возможности группировать *Протоколы*
-extension Hero: Novice, Merchant {
-  var hp: Int {
-    get { return self.hp }
-    set {}
-  }
-
-  func firstAid() {
-    hp += 10
-  }
+class Weapon {
+  var atk: Int
   
-  func identify(item: String) {
-    print("Так это ж \(item)!")
+  init(atk: Int) {
+    self.atk = atk
   }
 }
 
-var hero = Hero(hp: 77)
-hero.firstAid()
-hero.identify(item: "Knife")
+var knife = Weapon(atk: 74)
+
+extension Weapon {
+  var atkWhenBroken: Int {
+    return (self.atk / 2)
+  }
+}
+
+knife.atkWhenBroken
+
 //: ### Домашнее задание
 //: Попробуйте создать несколько протоколов и имплементировать их *Классу* через расширение. Затем проверьте работоспособность данной конструкции.
 
