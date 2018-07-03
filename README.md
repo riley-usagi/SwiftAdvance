@@ -52,7 +52,7 @@
 * [x] [Extension](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Extension.xcplaygroundpage/Contents.swift)
 * [x] [Generic](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Generic.xcplaygroundpage/Contents.swift)
 * [ ] Closure
-* [ ] Error
+* [x] [Error](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Error.xcplaygroundpage/Contents.swift)
 * [ ] Try / Catch
 * [ ] Codable, Encodable, Decodable
 * [ ] Alamofire
