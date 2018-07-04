@@ -1,7 +1,5 @@
 //: [Назад](@previous)
-
 import Foundation
-
-var str = "Hello, playground"
+//: ## Try / Catch
 
 //: [Вперёд](@next)
