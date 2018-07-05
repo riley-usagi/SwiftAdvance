@@ -13,9 +13,9 @@ let nineTailFlee = 200
 // Так же как и в случае 
 switch nineTailFlee {
 case 200:
-  print("Показатель уворота Девятихвостика ровно 200")
+  print("Показатель уворота Девятихвостика - ровно 200")
 case let flee where flee > 70:
-  print("Уворот больше 70")
+  print("Уворот - больше 70")
 default:
   print("Ни-ичего не понимаю")
 }
