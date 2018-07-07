@@ -2,7 +2,7 @@
 import Foundation
 
 //: # Alpha
-//: > Создаём персонажа.
+
 
 
 //: [Вперёд](@next)

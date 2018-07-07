@@ -26,7 +26,7 @@
         <page name='Protocol'/>
         <page name='Extension'/>
         <page name='Generic'/>
-        <page name='Closure (in progress)'/>
+        <page name='Closure'/>
         <page name='Error'/>
         <page name='TryCatch (in progress)'/>
         <page name='CodableEncodableDecodable (jn progress)'/>
