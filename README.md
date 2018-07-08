@@ -53,13 +53,9 @@
 * [x] [Generic](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Generic.xcplaygroundpage/Contents.swift)
 * [x] [Closure](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Closure.xcplaygroundpage/Contents.swift)
 * [x] [Error](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Error.xcplaygroundpage/Contents.swift)
-* [ ] Try / Catch
+* [x] [Try / Catch](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/TryCatch.xcplaygroundpage/Contents.swift)
 * [ ] Codable, Encodable, Decodable
 * [ ] Alamofire
 * [ ] Realm
 * [ ] Vapor
-* [ ] Game (alpha)
-* [ ] Game (beta)
-* [ ] Game (release candidate)
-* [ ] Game (final)
 * [ ] TensorFlow
