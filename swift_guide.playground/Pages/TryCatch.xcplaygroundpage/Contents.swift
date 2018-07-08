@@ -27,8 +27,6 @@ class littleMerchantShop {
     "Hood [1]": InStoreItem(price: 21_000, count: 1, item: Item(name: "Hood [1]"))
   ]
   
-//  var zenyDeposited = 0
-  
   func sell(name: String, zeny: Int) throws -> Item {
     
     var depositedZeny = zeny
