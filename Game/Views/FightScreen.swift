@@ -2,10 +2,13 @@ import UIKit
 
 class FightScreen: UIViewController {
   
+  @IBOutlet weak var monsterName: UILabel!
+  @IBOutlet weak var monsterLevel: UILabel!
+  @IBOutlet weak var monsterHp: UILabel!
+  @IBOutlet weak var monsterHpProgressBar: UIProgressView!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    // Do any additional setup after loading the view.
   }
   
   

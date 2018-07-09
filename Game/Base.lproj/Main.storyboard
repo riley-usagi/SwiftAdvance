@@ -105,6 +105,12 @@
                         <viewLayoutGuide key="safeArea" id="Oiy-2a-bEq"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Fight" id="DST-Ax-lrk"/>
+                    <connections>
+                        <outlet property="monsterHp" destination="A1h-Dn-qqr" id="iCH-EC-aJa"/>
+                        <outlet property="monsterHpProgressBar" destination="Qun-el-Beg" id="YRt-nr-fhu"/>
+                        <outlet property="monsterLevel" destination="jjt-MN-oCV" id="nrs-me-Q6Q"/>
+                        <outlet property="monsterName" destination="f6A-t7-Cvi" id="gTS-Xn-s2b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m85-fT-hz3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

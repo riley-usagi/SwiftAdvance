@@ -18,6 +18,7 @@
 		1448E7FD20F36D0D00187976 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1448E7FB20F36D0D00187976 /* LaunchScreen.storyboard */; };
 		1459E57720F39FDF0042A57A /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459E57620F39FDF0042A57A /* RealmService.swift */; };
 		14A63CE020F3E29700AEE712 /* FightScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A63CDF20F3E29700AEE712 /* FightScreen.swift */; };
+		14A63CE220F3E52C00AEE712 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A63CE120F3E52C00AEE712 /* Player.swift */; };
 		14BA8B0C20F3705900992494 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BA8B0B20F3705900992494 /* Monster.swift */; };
 		3629D9427F805F28C0C3BC98 /* Pods_Game.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1D1AAEE3EB92B291FE9B43 /* Pods_Game.framework */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		1448E7FE20F36D0D00187976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1459E57620F39FDF0042A57A /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		14A63CDF20F3E29700AEE712 /* FightScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightScreen.swift; sourceTree = "<group>"; };
+		14A63CE120F3E52C00AEE712 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		14BA8B0B20F3705900992494 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 		7B1D1AAEE3EB92B291FE9B43 /* Pods_Game.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Game.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2B785BCB2B923B3407BE25 /* Pods-Game.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game.release.xcconfig"; path = "Pods/Target Support Files/Pods-Game/Pods-Game.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			children = (
 				14BA8B0B20F3705900992494 /* Monster.swift */,
 				1407209620F398D400A1C41C /* KnownMonster.swift */,
+				14A63CE120F3E52C00AEE712 /* Player.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				14A63CE020F3E29700AEE712 /* FightScreen.swift in Sources */,
 				1459E57720F39FDF0042A57A /* RealmService.swift in Sources */,
 				1407209520F3961000A1C41C /* KnownMonsterCell.swift in Sources */,
+				14A63CE220F3E52C00AEE712 /* Player.swift in Sources */,
 				1407209720F398D400A1C41C /* KnownMonster.swift in Sources */,
 				1407209320F395C000A1C41C /* KnownMonstersList.swift in Sources */,
 				1448E7F320F36D0B00187976 /* AppDelegate.swift in Sources */,
