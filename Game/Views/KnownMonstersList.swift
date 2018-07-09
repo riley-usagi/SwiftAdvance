@@ -1,36 +1,35 @@
 import UIKit
+import RealmSwift
 
 class KnownMonstersList: UITableViewController {
+  
+  var knownMonsters: Results<KnownMonster>!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = false
+    let realm = RealmService.shared.realm
+    knownMonsters = realm.objects(KnownMonster.self)
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem
-  }
-  
-  override func numberOfSections(in tableView: UITableView) -> Int {
-    // #warning Incomplete implementation, return the number of sections
-    return 0
+    print(realm.configuration.fileURL!)
   }
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     // #warning Incomplete implementation, return the number of rows
-    return 0
+    return knownMonsters.count
   }
   
-  /*
-   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-   let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-   
-   // Configure the cell...
-   
-   return cell
-   }
-   */
+  
+  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "knownMonsterCell", for: indexPath) as! KnownMonsterCell
+    
+    // Configure the cell...
+    let knownMonster = knownMonsters[indexPath.row]
+    cell.configure(with: knownMonster)
+    
+    return cell
+  }
+  
   
   /*
    // Override to support conditional editing of the table view.
