@@ -21,7 +21,7 @@
 * [x] [Array](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Array.xcplaygroundpage/Contents.swift)
 * [x] [Dictionary](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Dictionary.xcplaygroundpage/Contents.swift)
 * [x] [Set](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Set.xcplaygroundpage/Contents.swift)
-* [ ] Tuple
+* [x] [Tuple](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Tuple.xcplaygroundpage/Contents.swift)
 * [ ] Optional
 * [ ] Guard
 * [x] [If Else](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/IfElse.xcplaygroundpage/Contents.swift)
@@ -55,7 +55,3 @@
 * [x] [Error](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Error.xcplaygroundpage/Contents.swift)
 * [x] [Try / Catch](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/TryCatch.xcplaygroundpage/Contents.swift)
 * [ ] Codable, Encodable, Decodable
-* [ ] Alamofire
-* [ ] Realm
-* [ ] Vapor
-* [ ] TensorFlow
