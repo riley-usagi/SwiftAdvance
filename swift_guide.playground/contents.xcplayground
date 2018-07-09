@@ -11,7 +11,7 @@
         <page name='Array'/>
         <page name='Dictionary'/>
         <page name='Set'/>
-        <page name='Tuple (in progress)'/>
+        <page name='Tuple'/>
         <page name='Optional (in progress)'/>
         <page name='Guard (in progress)'/>
         <page name='IfElse'/>
@@ -30,13 +30,5 @@
         <page name='Error'/>
         <page name='TryCatch'/>
         <page name='CodableEncodableDecodable (jn progress)'/>
-        <page name='Alamofire (in progress)'/>
-        <page name='Realm (in progress)'/>
-        <page name='Vapor (in progress)'/>
-        <page name='Game (alpha) (in progress)'/>
-        <page name='Game (beta) (in progress)'/>
-        <page name='Game (release candidate) (in progress)'/>
-        <page name='Game (final) (in progress)'/>
-        <page name='TensorFlow (in progress)'/>
     </pages>
 </playground>
