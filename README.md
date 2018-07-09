@@ -5,6 +5,12 @@
 
 ![](example.png)
 
+# HowTo
+
+* Для начала вам необходимо обзовестись **CocoaPods**. [Инструкция](https://guides.cocoapods.org/using/getting-started)
+* В терминале введите команду `pod update` и дождитесь окончания установки необходимых библиотек.
+* Запустите проект - `Game.xworkspace`
+
 # Roadmap
 
 * [x] [Hot keys](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/HotKeys.xcplaygroundpage/Contents.swift)
@@ -23,7 +29,6 @@
 * [x] [Set](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Set.xcplaygroundpage/Contents.swift)
 * [x] [Tuple](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Tuple.xcplaygroundpage/Contents.swift)
 * [ ] Optional
-* [ ] Guard
 * [x] [If Else](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/IfElse.xcplaygroundpage/Contents.swift)
 * [ ] Switch
 * [x] [For](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/For.xcplaygroundpage/Contents.swift)
@@ -52,6 +57,7 @@
 * [x] [Extension](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Extension.xcplaygroundpage/Contents.swift)
 * [x] [Generic](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Generic.xcplaygroundpage/Contents.swift)
 * [x] [Closure](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Closure.xcplaygroundpage/Contents.swift)
+* [x] [Guard](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Guard.xcplaygroundpage/Contents.swift)
 * [x] [Error](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Error.xcplaygroundpage/Contents.swift)
 * [x] [Try / Catch](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/TryCatch.xcplaygroundpage/Contents.swift)
 * [ ] Codable, Encodable, Decodable
