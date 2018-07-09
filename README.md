@@ -9,7 +9,7 @@
 
 * Для начала вам необходимо обзовестись **CocoaPods**. [Инструкция](https://guides.cocoapods.org/using/getting-started)
 * В терминале введите команду `pod update` и дождитесь окончания установки необходимых библиотек.
-* Запустите проект - `Game.xworkspace`
+* Запустите проект - `Game.xcworkspace`
 
 # Roadmap
 
