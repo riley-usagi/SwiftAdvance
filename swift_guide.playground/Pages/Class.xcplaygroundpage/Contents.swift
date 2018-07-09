@@ -183,4 +183,5 @@ var boiledBluePotion: BluePotion? = BluePotion()
 boiledBluePotion = nil
 //: ### Домашнее задание
 //: Опробуйте все полученные в уроке возможности ООП.
+
 //: [Вперёд](@next)

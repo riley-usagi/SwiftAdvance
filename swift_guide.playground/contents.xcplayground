@@ -13,7 +13,6 @@
         <page name='Set'/>
         <page name='Tuple'/>
         <page name='Optional (in progress)'/>
-        <page name='Guard (in progress)'/>
         <page name='IfElse'/>
         <page name='Switch (in progress)'/>
         <page name='For'/>
@@ -27,6 +26,7 @@
         <page name='Extension'/>
         <page name='Generic'/>
         <page name='Closure'/>
+        <page name='Guard'/>
         <page name='Error'/>
         <page name='TryCatch'/>
         <page name='CodableEncodableDecodable (jn progress)'/>
