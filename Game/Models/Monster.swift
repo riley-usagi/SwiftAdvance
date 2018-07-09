@@ -6,22 +6,19 @@ let realm = try! Realm(configuration: config)
 
 
 @objcMembers class Monster: Object {
-  dynamic var name: String = ""
-  dynamic var level: Int = 0
-  dynamic var hp: Int = 0
-  let atkDelay = RealmOptional<Float>()
+  dynamic var name: String  = ""
+  dynamic var level: Int    = 0
+  dynamic var hp: Int       = 0
+  let atkDelay              = RealmOptional<Float>()
   
   convenience init(name: String, level: Int, hp: Int, atkDelay: Float?) {
     self.init()
-    self.name   = name
-    self.level  = level
-    self.hp     = hp
+    self.name           = name
+    self.level          = level
+    self.hp             = hp
     self.atkDelay.value = atkDelay
   }
 }
-
-
-
 
 public struct MonsterOld {
   
@@ -42,9 +39,6 @@ public struct MonsterOld {
   }
   
   /// Имя монстра
-  public var name: String
-  public var level: Int
-  public var hp: Int
   public var race: String
   public var property: (Property, Int)
   public var size: Size
@@ -53,7 +47,6 @@ public struct MonsterOld {
   public var flee: Int
   public var baseExp: Int
   public var jobExp: Int
-  public var atkDelay: Float
   public var atk: Int
   public var def: Int
   public var mDef: Int
@@ -65,9 +58,6 @@ public struct MonsterOld {
   public var luk: Int
   
   public init() {
-    self.name       = "Santa Poring"
-    self.hp         = 69
-    self.level      = 3
     self.race       = Race.plant.rawValue
     self.property   = (Property.holy, 1)
     self.size       = Size.small
@@ -76,7 +66,6 @@ public struct MonsterOld {
     self.flee       = 90
     self.baseExp    = 4
     self.jobExp     = 5
-    self.atkDelay   = 1.67
     self.atk        = Int(arc4random_uniform(5) + 12)
     self.def        = 0
     self.mDef       = 0

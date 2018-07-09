@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UuO-Cc-62G">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2hB-p4-Cc5">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Known Monsters List-->
+        <!--Monsters-->
         <scene sceneID="EkB-3Q-jJ7">
             <objects>
                 <tableViewController id="UuO-Cc-62G" customClass="KnownMonstersList" customModule="Game" customModuleProvider="target" sceneMemberID="viewController">
@@ -52,10 +54,79 @@
                             <outlet property="delegate" destination="UuO-Cc-62G" id="rn5-of-xEN"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Monsters" id="7c2-uW-HFa"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dtp-CD-w7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1545" y="31"/>
+            <point key="canvasLocation" x="2546" y="-330"/>
+        </scene>
+        <!--Fight-->
+        <scene sceneID="LaD-Pe-5tG">
+            <objects>
+                <viewController id="e9k-Vq-hlq" customClass="FightScreen" customModule="Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pt2-fm-FXS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monster name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6A-t7-Cvi">
+                                <rect key="frame" x="105" y="106" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjt-MN-oCV">
+                                <rect key="frame" x="140" y="151" width="40" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1h-Dn-qqr">
+                                <rect key="frame" x="149" y="191" width="23" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Qun-el-Beg">
+                                <rect key="frame" x="85" y="283" width="150" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="f6A-t7-Cvi" firstAttribute="centerX" secondItem="pt2-fm-FXS" secondAttribute="centerX" id="1Nm-RE-TdR"/>
+                            <constraint firstItem="f6A-t7-Cvi" firstAttribute="centerX" secondItem="A1h-Dn-qqr" secondAttribute="centerX" id="AMr-RM-zEY"/>
+                            <constraint firstItem="Qun-el-Beg" firstAttribute="top" secondItem="A1h-Dn-qqr" secondAttribute="bottom" constant="71" id="CYp-gR-iy6"/>
+                            <constraint firstItem="f6A-t7-Cvi" firstAttribute="top" secondItem="Oiy-2a-bEq" secondAttribute="top" constant="86" id="GNW-jr-XtE"/>
+                            <constraint firstItem="f6A-t7-Cvi" firstAttribute="centerX" secondItem="Qun-el-Beg" secondAttribute="centerX" id="N46-ut-glq"/>
+                            <constraint firstItem="Qun-el-Beg" firstAttribute="leading" secondItem="pt2-fm-FXS" secondAttribute="leadingMargin" constant="69" id="TMR-pd-YFf"/>
+                            <constraint firstItem="jjt-MN-oCV" firstAttribute="top" secondItem="f6A-t7-Cvi" secondAttribute="bottom" constant="24" id="Xnq-ld-LuU"/>
+                            <constraint firstItem="f6A-t7-Cvi" firstAttribute="centerX" secondItem="jjt-MN-oCV" secondAttribute="centerX" id="j4V-aH-aWQ"/>
+                            <constraint firstItem="Qun-el-Beg" firstAttribute="centerY" secondItem="pt2-fm-FXS" secondAttribute="centerY" id="xvp-cC-UxO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Oiy-2a-bEq"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Fight" id="DST-Ax-lrk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m85-fT-hz3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2544" y="432"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="B5V-SU-xjO">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="2hB-p4-Cc5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N3a-gb-1gH">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="e9k-Vq-hlq" kind="relationship" relationship="viewControllers" id="5Ay-bQ-2Ax"/>
+                        <segue destination="UuO-Cc-62G" kind="relationship" relationship="viewControllers" id="EAk-Y4-RHK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9xs-PM-X3H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1545" y="30.633802816901408"/>
         </scene>
     </scenes>
 </document>
