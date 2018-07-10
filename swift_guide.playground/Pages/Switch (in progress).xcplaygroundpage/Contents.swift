@@ -1,5 +1,4 @@
 //: [Назад](@previous)
-
 import Foundation
 //: ## Switch
 let nineTailFlee = 200
