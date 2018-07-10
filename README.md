@@ -28,7 +28,7 @@
 * [x] [Dictionary](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Dictionary.xcplaygroundpage/Contents.swift)
 * [x] [Set](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Set.xcplaygroundpage/Contents.swift)
 * [x] [Tuple](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Tuple.xcplaygroundpage/Contents.swift)
-* [ ] Optional
+* [ ] [Optional](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/Optional%20(in%20progress).xcplaygroundpage/Contents.swift)
 * [x] [If Else](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/IfElse.xcplaygroundpage/Contents.swift)
 * [ ] Switch
 * [x] [For](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/For.xcplaygroundpage/Contents.swift)
