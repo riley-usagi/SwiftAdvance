@@ -9,6 +9,8 @@ class FightScreen: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    
   }
   
   
