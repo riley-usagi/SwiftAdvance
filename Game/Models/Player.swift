@@ -10,4 +10,5 @@ class Player {
   var name: String  = "Riley"
   var atk: Int      = 77
   var str: Int      = 5
+  var agi: Int      = 5
 }
