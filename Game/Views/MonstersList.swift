@@ -3,13 +3,13 @@ import RealmSwift
 
 class MonstersList: UITableViewController {
   
-  var monsters: Results<KnownMonster>!
+  var monsters: Results<Monster>!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     let realm = RealmService.shared.realm
-    monsters = realm.objects(KnownMonster.self)
+    monsters = realm.objects(Monster.self)
     
     print(realm.configuration.fileURL!)
   }

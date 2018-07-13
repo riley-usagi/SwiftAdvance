@@ -1,4 +1,5 @@
 import Foundation
+import Realm
 import RealmSwift
 
 let config = Realm.Configuration(deleteRealmIfMigrationNeeded: true)
@@ -19,6 +20,10 @@ let realm = try! Realm(configuration: config)
     self.hp             = hp
     self.atk            = atk
     self.atkDelay.value = atkDelay
+  }
+  
+  override static func primaryKey() -> String? {
+    return "id"
   }
 }
 
