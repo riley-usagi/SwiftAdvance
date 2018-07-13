@@ -1,30 +1,29 @@
 import UIKit
 import RealmSwift
 
-class KnownMonstersList: UITableViewController {
+class MonstersList: UITableViewController {
   
-  var knownMonsters: Results<KnownMonster>!
+  var monsters: Results<KnownMonster>!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     let realm = RealmService.shared.realm
-    knownMonsters = realm.objects(KnownMonster.self)
+    monsters = realm.objects(KnownMonster.self)
     
     print(realm.configuration.fileURL!)
   }
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     // #warning Incomplete implementation, return the number of rows
-    return knownMonsters.count
+    return monsters.count
   }
   
-  
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "knownMonsterCell", for: indexPath) as! KnownMonsterCell
+    let cell = tableView.dequeueReusableCell(withIdentifier: "knownMonsterCell", for: indexPath) as! MonsterCell
     
     // Configure the cell...
-    let knownMonster = knownMonsters[indexPath.row]
+    let knownMonster = monsters[indexPath.row]
     cell.configure(with: knownMonster)
     
     return cell
