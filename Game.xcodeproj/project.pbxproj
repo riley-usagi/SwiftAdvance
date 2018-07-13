@@ -16,6 +16,7 @@
 		1448E7FA20F36D0D00187976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1448E7F920F36D0D00187976 /* Assets.xcassets */; };
 		1448E7FD20F36D0D00187976 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1448E7FB20F36D0D00187976 /* LaunchScreen.storyboard */; };
 		1459E57720F39FDF0042A57A /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459E57620F39FDF0042A57A /* RealmService.swift */; };
+		148C22C420F904B300794C83 /* JSONSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C22C320F904B300794C83 /* JSONSerializer.swift */; };
 		14A63CE020F3E29700AEE712 /* FightScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A63CDF20F3E29700AEE712 /* FightScreen.swift */; };
 		14A63CE220F3E52C00AEE712 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A63CE120F3E52C00AEE712 /* Player.swift */; };
 		14BA8B0C20F3705900992494 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BA8B0B20F3705900992494 /* Monster.swift */; };
@@ -36,6 +37,7 @@
 		1448E7FC20F36D0D00187976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1448E7FE20F36D0D00187976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1459E57620F39FDF0042A57A /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		148C22C320F904B300794C83 /* JSONSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializer.swift; sourceTree = "<group>"; };
 		14A63CDF20F3E29700AEE712 /* FightScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightScreen.swift; sourceTree = "<group>"; };
 		14A63CE120F3E52C00AEE712 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		14BA8B0B20F3705900992494 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				1448E7F920F36D0D00187976 /* Assets.xcassets */,
 				1448E7FB20F36D0D00187976 /* LaunchScreen.storyboard */,
 				1448E7FE20F36D0D00187976 /* Info.plist */,
+				148C22C320F904B300794C83 /* JSONSerializer.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				14BA8B0C20F3705900992494 /* Monster.swift in Sources */,
 				14A63CE020F3E29700AEE712 /* FightScreen.swift in Sources */,
 				1459E57720F39FDF0042A57A /* RealmService.swift in Sources */,
+				148C22C420F904B300794C83 /* JSONSerializer.swift in Sources */,
 				1407209520F3961000A1C41C /* MonsterCell.swift in Sources */,
 				14A63CE220F3E52C00AEE712 /* Player.swift in Sources */,
 				1407209320F395C000A1C41C /* MonstersList.swift in Sources */,

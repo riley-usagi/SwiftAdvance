@@ -8,27 +8,28 @@ class MonstersList: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    let realm = RealmService.shared.realm
-    monsters = realm.objects(Monster.self)
+//    let realm = RealmService.shared.realm
+//    monsters = realm.objects(Monster.self)
     
     print(realm.configuration.fileURL!)
   }
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     // #warning Incomplete implementation, return the number of rows
-    return monsters.count
+//    return monsters.count
+    return 0
   }
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "knownMonsterCell", for: indexPath) as! MonsterCell
+//    let cell = tableView.dequeueReusableCell(withIdentifier: "MonsterCell", for: indexPath) as! MonsterCell
+    let cell = tableView.dequeueReusableCell(withIdentifier: "MonsterCell", for: indexPath)
     
     // Configure the cell...
-    let knownMonster = monsters[indexPath.row]
-    cell.configure(with: knownMonster)
+//    let knownMonster = monsters[indexPath.row]
+//    cell.configure(with: knownMonster)
     
     return cell
   }
-  
   
   /*
    // Override to support conditional editing of the table view.
