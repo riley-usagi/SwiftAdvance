@@ -9,7 +9,7 @@ let realm = try! Realm(configuration: config)
 @objcMembers class Monster: Object, Decodable {
   dynamic var id: Int       = 0
   dynamic var name: String  = ""
-  dynamic var level: Int    = 0
+  //  dynamic var level: Int    = 0
   dynamic var hp: Int       = 0
   dynamic var atk: Int      = 0
   //  let atkDelay              = RealmOptional<Float>()
@@ -27,11 +27,11 @@ let realm = try! Realm(configuration: config)
     case atk
   }
   
-  convenience init(id: Int, name: String, level: Int, hp: Int, atk: Int) {
+  convenience init(id: Int, name: String, hp: Int, atk: Int) {
     self.init()
     self.id     = id
     self.name   = name
-    self.level  = level
+    //    self.level  = level
     self.hp     = hp
     self.atk    = atk
     //    self.atkDelay.value = atkDelay
@@ -41,10 +41,10 @@ let realm = try! Realm(configuration: config)
     let container = try decoder.container(keyedBy: MonsterCodingKeys.self)
     let id        = try container.decode(Int.self, forKey: .id)
     let name      = try container.decode(String.self, forKey: .name)
-    let level     = try container.decode(Int.self, forKey: .level)
+    //    let level     = try container.decode(Int.self, forKey: .level)
     let hp        = try container.decode(Int.self, forKey: .hp)
     let atk       = try container.decode(Int.self, forKey: .atk)
-    self.init(id: id, name: name, level: level, hp: hp, atk: atk)
+    self.init(id: id, name: name, hp: hp, atk: atk)
   }
   
   required init() {

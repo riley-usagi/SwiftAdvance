@@ -3,30 +3,30 @@ import RealmSwift
 
 class MonstersList: UITableViewController {
   
-  var monsters: Results<Monster>!
+  //  var monsters: Results<Monster>!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-//    let realm = RealmService.shared.realm
-//    monsters = realm.objects(Monster.self)
+    //        let realm = RealmService.shared.realm
+    //    monsters = realm.objects(Monster.self)
     
-    print(realm.configuration.fileURL!)
+    //    print(realm.configuration.fileURL!)
   }
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     // #warning Incomplete implementation, return the number of rows
-//    return monsters.count
+    //    return monsters.count
     return 0
   }
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//    let cell = tableView.dequeueReusableCell(withIdentifier: "MonsterCell", for: indexPath) as! MonsterCell
+    //    let cell = tableView.dequeueReusableCell(withIdentifier: "MonsterCell", for: indexPath) as! MonsterCell
     let cell = tableView.dequeueReusableCell(withIdentifier: "MonsterCell", for: indexPath)
     
     // Configure the cell...
-//    let knownMonster = monsters[indexPath.row]
-//    cell.configure(with: knownMonster)
+    //    let knownMonster = monsters[indexPath.row]
+    //    cell.configure(with: knownMonster)
     
     return cell
   }
