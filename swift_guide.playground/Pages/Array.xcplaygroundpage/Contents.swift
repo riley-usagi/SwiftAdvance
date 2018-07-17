@@ -22,6 +22,8 @@ monsterDrop.count
 //: Первый и последний элементы.
 monsterDrop.first
 monsterDrop.last
+//: Удаление по индексу.
+monsterDrop.remove(at: 2)
 //: Удаление первого элемента, последнего и всех.
 monsterDrop.removeFirst()
 monsterDrop.removeLast()
