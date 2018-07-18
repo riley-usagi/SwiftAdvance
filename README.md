@@ -11,6 +11,8 @@
 * В терминале введите команду `pod update` и дождитесь окончания установки необходимых библиотек.
 * Запустите проект - `Game.xcworkspace`
 
+Или же просто запустите файл - `Game.xcodeproj`
+
 # Roadmap
 
 * [x] [Hot keys](https://github.com/riley-usagi/swift_guide/blob/master/swift_guide.playground/Pages/HotKeys.xcplaygroundpage/Contents.swift)
