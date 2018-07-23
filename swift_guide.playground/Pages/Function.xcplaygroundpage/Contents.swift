@@ -46,7 +46,7 @@ if (cooking(grape: 5, lemon: 4, strawberry: 1, orange: 9, alcohol: nil) != nil) 
 
 print("\n===========\n")
 //: ## Стандартное значение параметра
-//: Так же существует возможность задать определённое значение для одного из параметров.
+//: Также существует возможность задать определённое значение для одного из параметров.
 func makingIceArrows(glacialHeart: Int = 10) -> [String: Int] {
   return ["Crystal Arrow": 50, "Frozen Arrow": 50]
 }
