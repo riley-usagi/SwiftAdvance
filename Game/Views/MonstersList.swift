@@ -8,8 +8,8 @@ class MonstersList: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    let realm = RealmService.shared.realm
-    monsters = realm.objects(Monster.self)
+//    let realm = RealmService.shared.realm
+//    monsters = realm.objects(Monster.self)
   }
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -8,29 +8,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    
-//    autoreleasepool {
-//      // all Realm usage here
-//    }
-//    let realmURL = Realm.Configuration.defaultConfiguration.fileURL!
-//    let realmURLs = [
-//      realmURL,
-//      realmURL.appendingPathExtension("lock"),
-//      realmURL.appendingPathExtension("note"),
-//      realmURL.appendingPathExtension("management")
-//    ]
-//    for URL in realmURLs {
-//      do {
-//        try FileManager.default.removeItem(at: URL)
-//      } catch {
-//        // handle error
-//      }
-//    }
-    
-    let realm = try! Realm()
-    print(realm.configuration.fileURL!)
-//    let serializer = JSONSerializer()
-//    serializer.serialize(input: "Monsters.json")
     return true
   }
   
@@ -55,7 +32,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func applicationWillTerminate(_ application: UIApplication) {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
   }
-  
-  
 }
 

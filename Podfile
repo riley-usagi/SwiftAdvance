@@ -7,4 +7,6 @@ target 'Game' do
 
   # Pods for Game
   pod 'RealmSwift'
+  pod 'Magic'
+  pod 'Alamofire', '~> 4.7'
 end
