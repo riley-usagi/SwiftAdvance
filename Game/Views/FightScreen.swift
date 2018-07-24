@@ -15,27 +15,10 @@ class FightScreen: UIViewController {
   @IBOutlet weak var monsterHp: UILabel!
   @IBOutlet weak var monsterHpProgressBar: UIProgressView!
   
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
-
-    // Стандартная конфигурация
-    let configuration = URLSessionConfiguration.default
-    
-    // Добавляем заголовки из Alamofire
-    configuration.httpAdditionalHeaders = SessionManager.defaultHTTPHeaders
-    
-    configuration.httpMaximumConnectionsPerHost = 10
-    
-    
-    // Применяем настройки
-    let sessionManager = SessionManager(configuration: configuration)
-    
-    let parameters: Parameters = [:]
-    
-    sessionManager.request("localhost:8080/monsters", method: .get, parameters: parameters).responseJSON { (response) in
-      magic(response)
-    }
   }
   
   

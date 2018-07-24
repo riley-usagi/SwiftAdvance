@@ -1,6 +1,10 @@
 import UIKit
 import Realm
 import RealmSwift
+import Alamofire
+import Magic
+
+public typealias JsonDictionary = [String: Any]
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -8,6 +12,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    
+    // Стандартная конфигурация
+    let configuration = URLSessionConfiguration.default
+    
+    // Добавляем заголовки из Alamofire
+    configuration.httpAdditionalHeaders = SessionManager.defaultHTTPHeaders
+    
+    configuration.httpMaximumConnectionsPerHost = 10
+    
+    // Применяем настройки
+    let sessionManager = SessionManager(configuration: configuration)
+    
+    let parameters: Parameters = [:]
+    
+    sessionManager.request("https://ragnarok-open-api.herokuapp.com/monsters", method: .get, parameters: parameters).responseJSON { (response) in
+      magic(response)
+      let _ = sessionManager // retain
+    }
+
     return true
   }
   
