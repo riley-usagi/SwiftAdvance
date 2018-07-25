@@ -19,12 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Добавляем заголовки из Alamofire
     configuration.httpAdditionalHeaders = SessionManager.defaultHTTPHeaders
     
-    configuration.httpMaximumConnectionsPerHost = 10
-    
     // Применяем настройки
     let sessionManager = SessionManager(configuration: configuration)
     
-    let parameters: Parameters = [:]
+    let parameters: Parameters = Dictionary()
     
     sessionManager.request("https://ragnarok-open-api.herokuapp.com/monsters", method: .get, parameters: parameters).responseJSON { (response) in
       magic(response)
