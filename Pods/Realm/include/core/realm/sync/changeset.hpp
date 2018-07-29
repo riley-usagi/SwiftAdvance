@@ -101,7 +101,7 @@ struct Changeset {
     iterator erase(const_iterator);
 
     /// Insert an instruction at the end, invalidating all iterators.
-    void push_back(Instruction);
+    void push_back(const Instruction&);
 
     //@{
     /// Insert instructions at \a position without invalidating other
@@ -195,11 +195,11 @@ private:
     // `util::Optional`.
     struct InstructionContainer : Instruction {
         InstructionContainer();
-        InstructionContainer(Instruction instr);
-        InstructionContainer(InstructionContainer&&);
+        InstructionContainer(const Instruction& instr);
+        InstructionContainer(InstructionContainer&&) noexcept;
         InstructionContainer(const InstructionContainer&);
         ~InstructionContainer();
-        InstructionContainer& operator=(InstructionContainer&&);
+        InstructionContainer& operator=(InstructionContainer&&) noexcept;
         InstructionContainer& operator=(const InstructionContainer&);
 
         bool is_multi() const noexcept;
@@ -565,15 +565,17 @@ inline Changeset::iterator Changeset::erase_stable(const_iterator cpos)
     REALM_ASSERT(pos.m_inner < end);
     pos.m_inner->erase(pos.m_pos);
     if (pos.m_pos >= pos.m_inner->size()) {
-        ++pos.m_inner;
+        do {
+            ++pos.m_inner;
+        } while (pos.m_inner != end && pos.m_inner->size() == 0);
         pos.m_pos = 0;
     }
     return pos;
 }
 
-inline void Changeset::push_back(Instruction instr)
+inline void Changeset::push_back(const Instruction& instr)
 {
-    m_instructions.push_back(std::move(instr));
+    m_instructions.emplace_back(instr);
 }
 
 inline auto Changeset::const_iterator_to_iterator(const_iterator cpos) -> iterator

@@ -11,6 +11,7 @@
 		1407209520F3961000A1C41C /* MonsterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1407209420F3961000A1C41C /* MonsterCell.swift */; };
 		1407209B20F399A500A1C41C /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = 1407209820F399A400A1C41C /* example.png */; };
 		1407209C20F399A500A1C41C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1407209920F399A500A1C41C /* README.md */; };
+		142F1ACA210D899C0035F5B7 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F1AC9210D899C0035F5B7 /* Monster.swift */; };
 		1448E7F320F36D0B00187976 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448E7F220F36D0B00187976 /* AppDelegate.swift */; };
 		1448E7F820F36D0B00187976 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1448E7F620F36D0B00187976 /* Main.storyboard */; };
 		1448E7FA20F36D0D00187976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1448E7F920F36D0D00187976 /* Assets.xcassets */; };
@@ -20,7 +21,7 @@
 		148C22C420F904B300794C83 /* JSONSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C22C320F904B300794C83 /* JSONSerializer.swift */; };
 		14A63CE020F3E29700AEE712 /* FightScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A63CDF20F3E29700AEE712 /* FightScreen.swift */; };
 		14A63CE220F3E52C00AEE712 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A63CE120F3E52C00AEE712 /* Player.swift */; };
-		14BA8B0C20F3705900992494 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BA8B0B20F3705900992494 /* Monster.swift */; };
+		14BA8B0C20F3705900992494 /* OtherMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BA8B0B20F3705900992494 /* OtherMonster.swift */; };
 		3629D9427F805F28C0C3BC98 /* Pods_Game.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1D1AAEE3EB92B291FE9B43 /* Pods_Game.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		1407209820F399A400A1C41C /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
 		1407209920F399A500A1C41C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1407209A20F399A500A1C41C /* swift_guide.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = swift_guide.playground; sourceTree = "<group>"; };
+		142F1AC9210D899C0035F5B7 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 		1448E7EF20F36D0B00187976 /* Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1448E7F220F36D0B00187976 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1448E7F720F36D0B00187976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,7 +44,7 @@
 		148C22C320F904B300794C83 /* JSONSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializer.swift; sourceTree = "<group>"; };
 		14A63CDF20F3E29700AEE712 /* FightScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightScreen.swift; sourceTree = "<group>"; };
 		14A63CE120F3E52C00AEE712 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		14BA8B0B20F3705900992494 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		14BA8B0B20F3705900992494 /* OtherMonster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherMonster.swift; sourceTree = "<group>"; };
 		7B1D1AAEE3EB92B291FE9B43 /* Pods_Game.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Game.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2B785BCB2B923B3407BE25 /* Pods-Game.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game.release.xcconfig"; path = "Pods/Target Support Files/Pods-Game/Pods-Game.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,8 +120,9 @@
 		14BA8B0A20F3704700992494 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				14BA8B0B20F3705900992494 /* Monster.swift */,
+				14BA8B0B20F3705900992494 /* OtherMonster.swift */,
 				14A63CE120F3E52C00AEE712 /* Player.swift */,
+				142F1AC9210D899C0035F5B7 /* Monster.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				"${BUILT_PRODUCTS_DIR}/Magic/Magic.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -249,6 +253,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Magic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -262,7 +267,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14BA8B0C20F3705900992494 /* Monster.swift in Sources */,
+				14BA8B0C20F3705900992494 /* OtherMonster.swift in Sources */,
+				142F1ACA210D899C0035F5B7 /* Monster.swift in Sources */,
 				14A63CE020F3E29700AEE712 /* FightScreen.swift in Sources */,
 				1459E57720F39FDF0042A57A /* RealmService.swift in Sources */,
 				148C22C420F904B300794C83 /* JSONSerializer.swift in Sources */,

@@ -490,10 +490,6 @@ public:
 
         /// The encryption key the SharedGroup will be opened with.
         Optional<std::array<char, 64>> encryption_key;
-
-        /// FIXME: This value must currently be true in a cluster setup.
-        /// This restriction will be lifted in the future.
-        bool one_connection_per_session = true;
     };
 
     /// \brief Start a new session for the specified client-side Realm.

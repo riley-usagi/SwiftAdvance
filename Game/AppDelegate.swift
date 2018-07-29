@@ -24,11 +24,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let parameters: Parameters = Dictionary()
     
-    sessionManager.request("https://ragnarok-open-api.herokuapp.com/monsters", method: .get, parameters: parameters).responseJSON { (response) in
+    sessionManager.request("https://ragnarok-open-api.herokuapp.com/monsters", method: .get, parameters: parameters).responseData { (response) in
       magic(response)
       let _ = sessionManager // retain
     }
 
+    
     return true
   }
   

@@ -9,4 +9,5 @@ target 'Game' do
   pod 'RealmSwift'
   pod 'Magic'
   pod 'Alamofire', '~> 4.7'
+  pod 'SwiftyJSON'
 end
