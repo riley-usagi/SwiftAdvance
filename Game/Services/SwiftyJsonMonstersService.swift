@@ -13,16 +13,16 @@ class SwiftyJsonMonstersService {
   
   func loadMonstersData(completion: @escaping ([Monster]) -> Void) {
     
-    Alamofire.request(url!, method: .get).responseJSON { (response) in
+    Alamofire.request(url!, method: .get).responseData { (response) in
       guard let data = response.value else { return }
       
-      magic(data)
-      
-      let json = try! JSON(data: data as! Data)
+      let json = try! JSON(data: data)
       
       let monster = json.compactMap { Monster(json: $0.1) }
       
       completion(monster)
+    
+    
     }
     
   }

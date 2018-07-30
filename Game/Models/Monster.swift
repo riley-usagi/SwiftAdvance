@@ -2,15 +2,12 @@ import Foundation
 import Magic
 import SwiftyJSON
 
-
-let url = URL(string: "https://ragnarok-open-api.herokuapp.com/monsters")
-
 class Monster {
-  var id: Int
-  var name = ""
+  var name: String
   
   init(json: JSON) {
-    self.id   = json["id"].intValue
+    magic(json["name"].stringValue)
+    
     self.name = json["name"].stringValue
   }
 }

@@ -9,20 +9,10 @@ public typealias JsonDictionary = [String: Any]
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-  var monsters = [Monster]()
   
   var window: UIWindow?
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    
-    let monsterService = SwiftyJsonMonstersService()
-    
-    monsterService.loadMonstersData() { [weak self] monsters in
-      self?.monsters = monsters
-    }
-    
-    magic(monsters)
     
     return true
   }

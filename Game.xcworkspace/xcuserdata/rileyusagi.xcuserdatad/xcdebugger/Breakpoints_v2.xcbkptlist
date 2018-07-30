@@ -6,15 +6,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Game/Services/SwiftyJsonMonstersService.swift"
-            timestampString = "554669089.342334"
+            timestampString = "554672203.205181"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "loadMonstersData(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -22,49 +22,33 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Game/Services/SwiftyJsonMonstersService.swift"
-            timestampString = "554669102.320017"
+            filePath = "Game/Models/Monster.swift"
+            timestampString = "554672203.206265"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "loadMonstersData(completion:)"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "init(json:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in Game.SwiftyJsonMonstersService.loadMonstersData(completion: (Swift.Array&lt;Game.Monster&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Game"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rileyusagi/Desktop/swift%20guide/Game/Services/SwiftyJsonMonstersService.swift"
-                  timestampString = "554669102.3263789"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "696">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((Swift.String, SwiftyJSON.JSON)) -&gt; Swift.Optional&lt;Game.Monster&gt; in closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in Game.SwiftyJsonMonstersService.loadMonstersData(completion: (Swift.Array&lt;Game.Monster&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Game"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rileyusagi/Desktop/swift%20guide/Game/Services/SwiftyJsonMonstersService.swift"
-                  timestampString = "554669102.329751"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "253">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Game/AppDelegate.swift"
+            timestampString = "554672203.2066979"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

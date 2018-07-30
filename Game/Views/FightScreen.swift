@@ -15,9 +15,17 @@ class FightScreen: UIViewController {
   @IBOutlet weak var monsterHp: UILabel!
   @IBOutlet weak var monsterHpProgressBar: UIProgressView!
   
+  var monsters = [Monster]()
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    SwiftyJsonMonstersService.init().loadMonstersData { [weak self] jsonMonsters in
+      
+      self?.monsters = jsonMonsters
+      
+      self?.monsterName.text = self?.monsters.first?.name
+    }
     
   }
   
