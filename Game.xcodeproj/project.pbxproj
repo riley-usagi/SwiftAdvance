@@ -22,6 +22,7 @@
 		14A63CE020F3E29700AEE712 /* FightScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A63CDF20F3E29700AEE712 /* FightScreen.swift */; };
 		14A63CE220F3E52C00AEE712 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A63CE120F3E52C00AEE712 /* Player.swift */; };
 		14BA8B0C20F3705900992494 /* OtherMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BA8B0B20F3705900992494 /* OtherMonster.swift */; };
+		14BD444A210EFF3D005E49FC /* SwiftyJsonMonstersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BD4449210EFF3D005E49FC /* SwiftyJsonMonstersService.swift */; };
 		3629D9427F805F28C0C3BC98 /* Pods_Game.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1D1AAEE3EB92B291FE9B43 /* Pods_Game.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		14A63CDF20F3E29700AEE712 /* FightScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightScreen.swift; sourceTree = "<group>"; };
 		14A63CE120F3E52C00AEE712 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		14BA8B0B20F3705900992494 /* OtherMonster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherMonster.swift; sourceTree = "<group>"; };
+		14BD4449210EFF3D005E49FC /* SwiftyJsonMonstersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJsonMonstersService.swift; sourceTree = "<group>"; };
 		7B1D1AAEE3EB92B291FE9B43 /* Pods_Game.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Game.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2B785BCB2B923B3407BE25 /* Pods-Game.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game.release.xcconfig"; path = "Pods/Target Support Files/Pods-Game/Pods-Game.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				1459E57620F39FDF0042A57A /* RealmService.swift */,
+				14BD4449210EFF3D005E49FC /* SwiftyJsonMonstersService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14BD444A210EFF3D005E49FC /* SwiftyJsonMonstersService.swift in Sources */,
 				14BA8B0C20F3705900992494 /* OtherMonster.swift in Sources */,
 				142F1ACA210D899C0035F5B7 /* Monster.swift in Sources */,
 				14A63CE020F3E29700AEE712 /* FightScreen.swift in Sources */,

@@ -3,32 +3,26 @@ import Realm
 import RealmSwift
 import Alamofire
 import Magic
+import SwiftyJSON
 
 public typealias JsonDictionary = [String: Any]
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+
+  var monsters = [Monster]()
   
   var window: UIWindow?
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
-    // Стандартная конфигурация
-    let configuration = URLSessionConfiguration.default
+    let monsterService = SwiftyJsonMonstersService()
     
-    // Добавляем заголовки из Alamofire
-    configuration.httpAdditionalHeaders = SessionManager.defaultHTTPHeaders
-    
-    // Применяем настройки
-    let sessionManager = SessionManager(configuration: configuration)
-    
-    let parameters: Parameters = Dictionary()
-    
-    sessionManager.request("https://ragnarok-open-api.herokuapp.com/monsters", method: .get, parameters: parameters).responseData { (response) in
-      magic(response)
-      let _ = sessionManager // retain
+    monsterService.loadMonstersData() { [weak self] monsters in
+      self?.monsters = monsters
     }
-
+    
+    magic(monsters)
     
     return true
   }
