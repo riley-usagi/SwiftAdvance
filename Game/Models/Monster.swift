@@ -1,12 +1,13 @@
 import Foundation
 import Magic
 import SwiftyJSON
+import RealmSwift
 
-class Monster {
-  var name: String
+class Monster: Object {
+  @objc dynamic var name = ""
   
-  init(json: JSON) {
-    magic(json["name"].stringValue)
+  convenience init(json: JSON) {
+    self.init()
     
     self.name = json["name"].stringValue
   }

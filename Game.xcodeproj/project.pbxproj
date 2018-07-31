@@ -63,9 +63,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1405DD1D211096C0002971CB /* Player */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
 		1407209120F3957300A1C41C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1405DD1D211096C0002971CB /* Player */,
 				1407209220F395C000A1C41C /* MonstersList.swift */,
 				1407209420F3961000A1C41C /* MonsterCell.swift */,
 				14A63CDF20F3E29700AEE712 /* FightScreen.swift */,

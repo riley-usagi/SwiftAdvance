@@ -20,11 +20,11 @@ class FightScreen: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    SwiftyJsonMonstersService.init().loadMonstersData { [weak self] jsonMonsters in
+    SwiftyJsonMonstersService().allMonsters() { [weak self] jsonMonsters in
       
       self?.monsters = jsonMonsters
       
-      self?.monsterName.text = self?.monsters.first?.name
+      self?.monsterName.text = self?.monsters.last?.name
     }
     
   }
