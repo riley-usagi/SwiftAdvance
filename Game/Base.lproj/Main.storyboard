@@ -54,7 +54,7 @@
                             <outlet property="delegate" destination="UuO-Cc-62G" id="rn5-of-xEN"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Monsters" id="7c2-uW-HFa"/>
+                    <tabBarItem key="tabBarItem" title="Monsters" id="7c2-uW-HFa" customClass="AdaptiveTabBarItem" customModule="Game" customModuleProvider="target"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dtp-CD-w7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -104,7 +104,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Oiy-2a-bEq"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Fight" id="DST-Ax-lrk"/>
+                    <tabBarItem key="tabBarItem" title="Fight" id="DST-Ax-lrk" customClass="AdaptiveTabBarItem" customModule="Game" customModuleProvider="target"/>
                     <connections>
                         <outlet property="monsterHp" destination="A1h-Dn-qqr" id="iCH-EC-aJa"/>
                         <outlet property="monsterHpProgressBar" destination="Qun-el-Beg" id="YRt-nr-fhu"/>
@@ -125,6 +125,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="e9k-Vq-hlq" kind="relationship" relationship="viewControllers" id="5Ay-bQ-2Ax"/>
