@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // let adaptiveState = AdaptiveDateState(installDate: installDate, currentDate: Date(), countDaysToSmallTextState: countDaysToSmallTextState, countDaysToImageState: countDaysToImageState)
     
     // 2. Launches count logic
-    let curentLaunch = 4 //update current launc number to watch tab bar adaptation
+    let curentLaunch = 1 //update current launc number to watch tab bar adaptation
     let adaptiveState = AdaptiveLaunchesState(curentCountLaunches: curentLaunch, countLaunchesToSmallTextState: countDaysForSmaltextState, countLaunchesToImageState: countDaysForImageModeState)
     
     
@@ -57,63 +57,45 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       kImageAdaptiveState + selected: "_bigimage",
       ]
     
-    /// Настройки поведения TabBar'a
-    let watchApperance = AdaptiveButtonAppearance()
+    /// Первый TabBar (Fight)
+    let fightApperance = AdaptiveButtonAppearance()
     
     // Текст для большого размера
-    watchApperance.setButonTitle(title: "Fight", state: kDefaultAdaptiveState)
+    fightApperance.setButonTitle(title: "Fight", state: kDefaultAdaptiveState)
     
     // Текст для среднего размера
-    watchApperance.setButonTitle(title: "Fight", state: kSmallTitleAdaptiveState)
+    fightApperance.setButonTitle(title: "Fight", state: kSmallTitleAdaptiveState)
     
     // Текст для состояния "иконки" (отсутствует)
-    watchApperance.setButonTitle(title: "", state: kImageAdaptiveState)
+    fightApperance.setButonTitle(title: "", state: kImageAdaptiveState)
     
     // Цвет заголовка кнопки
-    watchApperance.setTitleColor(color: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), state: kDefaultAdaptiveState)
+    fightApperance.setTitleColor(color: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), state: kDefaultAdaptiveState)
     
     // Шрифт для текста стандартного размера
-    watchApperance.setButonTitleFontForState(font: defaultFont, state: kDefaultAdaptiveState)
+    fightApperance.setButonTitleFontForState(font: defaultFont, state: kDefaultAdaptiveState)
     
     // Шрифт для текста среднего размера
-    watchApperance.setButonTitleFontForState(font: defaultSmallTitleModeFont, state: kSmallTitleAdaptiveState)
+    fightApperance.setButonTitleFontForState(font: defaultSmallTitleModeFont, state: kSmallTitleAdaptiveState)
     
+    // Настройки отображения иконки и её размеров
+    fightApperance.setImageNamesForStatesImageExtesions(imageName: "attack", imageExtensionsForState: imageExtensionsForStates)
+    fightApperance.setImageInsets(insets: defaultInsets, state: kDefaultAdaptiveState)
+    fightApperance.setImageInsets(insets: defaultSmallTitleModeImageInsets, state: kSmallTitleAdaptiveState)
+    fightApperance.setTitleOffset(insets: defaultOffset, state: kDefaultAdaptiveState)
+    fightApperance.setImageInsets(insets: defaultImageModeInsets, state: kImageAdaptiveState)
     
-    watchApperance.setImageNamesForStatesImageExtesions(imageName: "attack", imageExtensionsForState: imageExtensionsForStates)
-    watchApperance.setImageInsets(insets: defaultInsets, state: kDefaultAdaptiveState)
-    watchApperance.setImageInsets(insets: defaultSmallTitleModeImageInsets, state: kSmallTitleAdaptiveState)
-    watchApperance.setTitleOffset(insets: defaultOffset, state: kDefaultAdaptiveState)
-    watchApperance.setImageInsets(insets: defaultImageModeInsets, state: kImageAdaptiveState)
+    /// Settings
+    let settingsApperance = AdaptiveButtonAppearance()
     
+    // Перенимаем все настройки у первого TabBar'a
+    settingsApperance.setAllCommonApperanceFrom(adaptiveButtonApperance: fightApperance)
     
-    let userApperance = AdaptiveButtonAppearance()
-    userApperance.setAllCommonApperanceFrom(adaptiveButtonApperance: watchApperance)
-    userApperance.setButonTitle(title: "user", state: kDefaultAdaptiveState)
-    userApperance.setButonTitle(title: "", state: kImageAdaptiveState)
-    userApperance.setImageNamesForStatesImageExtesions(imageName: "man", imageExtensionsForState: imageExtensionsForStates)
+    settingsApperance.setButonTitle(title: "Settings", state: kDefaultAdaptiveState)
+    settingsApperance.setButonTitle(title: "", state: kImageAdaptiveState)
+    settingsApperance.setImageNamesForStatesImageExtesions(imageName: "settings", imageExtensionsForState: imageExtensionsForStates)
     
-    
-    let messageApperance = AdaptiveButtonAppearance()
-    messageApperance.setAllCommonApperanceFrom(adaptiveButtonApperance: watchApperance)
-    messageApperance.setButonTitle(title: "message", state: kDefaultAdaptiveState)
-    messageApperance.setButonTitle(title: "", state: kImageAdaptiveState)
-    messageApperance.setImageNamesForStatesImageExtesions(imageName: "messages", imageExtensionsForState: imageExtensionsForStates)
-    
-    
-    let menuApperance = AdaptiveButtonAppearance()
-    menuApperance.setAllCommonApperanceFrom(adaptiveButtonApperance: watchApperance)
-    menuApperance.setButonTitle(title: "dial", state: kDefaultAdaptiveState)
-    menuApperance.setButonTitle(title: "", state: kImageAdaptiveState)
-    menuApperance.setImageNamesForStatesImageExtesions(imageName: "menu", imageExtensionsForState: imageExtensionsForStates)
-    
-    
-    let moreApperance = AdaptiveButtonAppearance()
-    moreApperance.setAllCommonApperanceFrom(adaptiveButtonApperance: watchApperance)
-    moreApperance.setButonTitle(title: "more", state: kDefaultAdaptiveState)
-    moreApperance.setButonTitle(title: "", state: kImageAdaptiveState)
-    moreApperance.setImageNamesForStatesImageExtesions(imageName: "more", imageExtensionsForState: imageExtensionsForStates)
-    
-    return [watchApperance, messageApperance, userApperance, menuApperance, moreApperance]
+    return [fightApperance, settingsApperance]
     
   }
   
