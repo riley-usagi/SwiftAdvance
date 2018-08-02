@@ -1,8 +1,8 @@
 import UIKit
 import Magic
-import AdaptiveController
-import CoreGraphics
-import QuartzCore
+//import AdaptiveController
+//import CoreGraphics
+//import QuartzCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -11,22 +11,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
-    UITabBar.appearance().tintColor = tabColor
-    UITabBar.appearance().barTintColor = UIColor.clear
-    UITabBar.appearance().shadowImage = UIImage()
-    UITabBar.appearance().selectionIndicatorImage = UIImage(named: "backgroud_tab")
-    UITabBar.appearance().itemPositioning = UITabBarItemPositioning.fill
-    UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: UIControlState.normal)
-    UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: tabColor], for: UIControlState.selected)
-    
-    let tabBarController: UITabBarController? = window?.rootViewController as? UITabBarController
-    let tabBar: UITabBar? = tabBarController?.tabBar
-    tabBar?.barTintColor = tabColor
-    tabBar?.isTranslucent = false
-    tabBar?.clipsToBounds = true
-    if #available(iOS 10.0, *) {
-      tabBar?.unselectedItemTintColor = UIColor.white
-    }
+//    UITabBar.appearance().tintColor = tabColor
+//    UITabBar.appearance().barTintColor = UIColor.clear
+//    UITabBar.appearance().shadowImage = UIImage()
+//    UITabBar.appearance().selectionIndicatorImage = UIImage(named: "backgroud_tab")
+//    UITabBar.appearance().itemPositioning = UITabBarItemPositioning.fill
+//    UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: UIControlState.normal)
+//    UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: tabColor], for: UIControlState.selected)
+//    
+//    let tabBarController: UITabBarController? = window?.rootViewController as? UITabBarController
+//    let tabBar: UITabBar? = tabBarController?.tabBar
+//    tabBar?.barTintColor = tabColor
+//    tabBar?.isTranslucent = false
+//    tabBar?.clipsToBounds = true
+//    if #available(iOS 10.0, *) {
+//      tabBar?.unselectedItemTintColor = UIColor.white
+//    }
     
     // TODO: Needed to finished this part
     // Uncomment one of two adaptive states logic
@@ -34,70 +34,70 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // let installDate = Date(dateString: "2014-07-7")
     // let adaptiveState = AdaptiveDateState(installDate: installDate, currentDate: Date(), countDaysToSmallTextState: countDaysToSmallTextState, countDaysToImageState: countDaysToImageState)
     
-    // 2. Launches count logic
-    let curentLaunch = 1 //update current launc number to watch tab bar adaptation
-    let adaptiveState = AdaptiveLaunchesState(curentCountLaunches: curentLaunch, countLaunchesToSmallTextState: countDaysForSmaltextState, countLaunchesToImageState: countDaysForImageModeState)
-    
-    
-    let butonsApperances = buttonsAppearancesGenerate()
-    if let arrayButtons = tabBar?.items as? [AdaptiveTabBarItem] {
-      AdaptiveButtonsStateManager.configureButtonsState(state: adaptiveState, buttonsAray: arrayButtons, buttonsAppearance: butonsApperances)
-    }
+//    // 2. Launches count logic
+//    let curentLaunch = 1 //update current launc number to watch tab bar adaptation
+//    let adaptiveState = AdaptiveLaunchesState(curentCountLaunches: curentLaunch, countLaunchesToSmallTextState: countDaysForSmaltextState, countLaunchesToImageState: countDaysForImageModeState)
+//    
+//    
+//    let butonsApperances = buttonsAppearancesGenerate()
+//    if let arrayButtons = tabBar?.items as? [AdaptiveTabBarItem] {
+//      AdaptiveButtonsStateManager.configureButtonsState(state: adaptiveState, buttonsAray: arrayButtons, buttonsAppearance: butonsApperances)
+//    }
     
     return true
   }
   
-  func buttonsAppearancesGenerate() -> [AdaptiveButtonAppearance] {
-    
-    let imageExtensionsForStates: Dictionary = [
-      kDefaultAdaptiveState: "",
-      kSmallTitleAdaptiveState: "_smalltitle",
-      kImageAdaptiveState: "_bigimage",
-      kSmallTitleAdaptiveState + selected: "_smalltitle",
-      kImageAdaptiveState + selected: "_bigimage",
-      ]
-    
-    /// Первый TabBar (Fight)
-    let fightApperance = AdaptiveButtonAppearance()
-    
-    // Текст для большого размера
-    fightApperance.setButonTitle(title: "Fight", state: kDefaultAdaptiveState)
-    
-    // Текст для среднего размера
-    fightApperance.setButonTitle(title: "Fight", state: kSmallTitleAdaptiveState)
-    
-    // Текст для состояния "иконки" (отсутствует)
-    fightApperance.setButonTitle(title: "", state: kImageAdaptiveState)
-    
-    // Цвет заголовка кнопки
-    fightApperance.setTitleColor(color: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), state: kDefaultAdaptiveState)
-    
-    // Шрифт для текста стандартного размера
-    fightApperance.setButonTitleFontForState(font: defaultFont, state: kDefaultAdaptiveState)
-    
-    // Шрифт для текста среднего размера
-    fightApperance.setButonTitleFontForState(font: defaultSmallTitleModeFont, state: kSmallTitleAdaptiveState)
-    
-    // Настройки отображения иконки и её размеров
-    fightApperance.setImageNamesForStatesImageExtesions(imageName: "attack", imageExtensionsForState: imageExtensionsForStates)
-    fightApperance.setImageInsets(insets: defaultInsets, state: kDefaultAdaptiveState)
-    fightApperance.setImageInsets(insets: defaultSmallTitleModeImageInsets, state: kSmallTitleAdaptiveState)
-    fightApperance.setTitleOffset(insets: defaultOffset, state: kDefaultAdaptiveState)
-    fightApperance.setImageInsets(insets: defaultImageModeInsets, state: kImageAdaptiveState)
-    
-    /// Settings
-    let settingsApperance = AdaptiveButtonAppearance()
-    
-    // Перенимаем все настройки у первого TabBar'a
-    settingsApperance.setAllCommonApperanceFrom(adaptiveButtonApperance: fightApperance)
-    
-    settingsApperance.setButonTitle(title: "Settings", state: kDefaultAdaptiveState)
-    settingsApperance.setButonTitle(title: "", state: kImageAdaptiveState)
-    settingsApperance.setImageNamesForStatesImageExtesions(imageName: "settings", imageExtensionsForState: imageExtensionsForStates)
-    
-    return [fightApperance, settingsApperance]
-    
-  }
+//  func buttonsAppearancesGenerate() -> [AdaptiveButtonAppearance] {
+//    
+//    let imageExtensionsForStates: Dictionary = [
+//      kDefaultAdaptiveState: "",
+//      kSmallTitleAdaptiveState: "_smalltitle",
+//      kImageAdaptiveState: "_bigimage",
+//      kSmallTitleAdaptiveState + selected: "_smalltitle",
+//      kImageAdaptiveState + selected: "_bigimage",
+//      ]
+//    
+//    /// Первый TabBar (Fight)
+//    let fightApperance = AdaptiveButtonAppearance()
+//    
+//    // Текст для большого размера
+//    fightApperance.setButonTitle(title: "Fight", state: kDefaultAdaptiveState)
+//    
+//    // Текст для среднего размера
+//    fightApperance.setButonTitle(title: "Fight", state: kSmallTitleAdaptiveState)
+//    
+//    // Текст для состояния "иконки" (отсутствует)
+//    fightApperance.setButonTitle(title: "", state: kImageAdaptiveState)
+//    
+//    // Цвет заголовка кнопки
+//    fightApperance.setTitleColor(color: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), state: kDefaultAdaptiveState)
+//    
+//    // Шрифт для текста стандартного размера
+//    fightApperance.setButonTitleFontForState(font: defaultFont, state: kDefaultAdaptiveState)
+//    
+//    // Шрифт для текста среднего размера
+//    fightApperance.setButonTitleFontForState(font: defaultSmallTitleModeFont, state: kSmallTitleAdaptiveState)
+//    
+//    // Настройки отображения иконки и её размеров
+//    fightApperance.setImageNamesForStatesImageExtesions(imageName: "attack", imageExtensionsForState: imageExtensionsForStates)
+//    fightApperance.setImageInsets(insets: defaultInsets, state: kDefaultAdaptiveState)
+//    fightApperance.setImageInsets(insets: defaultSmallTitleModeImageInsets, state: kSmallTitleAdaptiveState)
+//    fightApperance.setTitleOffset(insets: defaultOffset, state: kDefaultAdaptiveState)
+//    fightApperance.setImageInsets(insets: defaultImageModeInsets, state: kImageAdaptiveState)
+//    
+//    /// Settings
+//    let settingsApperance = AdaptiveButtonAppearance()
+//    
+//    // Перенимаем все настройки у первого TabBar'a
+//    settingsApperance.setAllCommonApperanceFrom(adaptiveButtonApperance: fightApperance)
+//    
+//    settingsApperance.setButonTitle(title: "Settings", state: kDefaultAdaptiveState)
+//    settingsApperance.setButonTitle(title: "", state: kImageAdaptiveState)
+//    settingsApperance.setImageNamesForStatesImageExtesions(imageName: "settings", imageExtensionsForState: imageExtensionsForStates)
+//    
+//    return [fightApperance, settingsApperance]
+//    
+//  }
   
   func applicationWillResignActive(_ application: UIApplication) {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -1,6 +1,7 @@
 import UIKit
 import Magic
 import Alamofire
+import RAMAnimatedTabBarController
 
 class FightScreen: UIViewController {
   
@@ -8,11 +9,14 @@ class FightScreen: UIViewController {
   @IBOutlet weak var monsterLevel: UILabel!
   @IBOutlet weak var monsterHp: UILabel!
   @IBOutlet weak var monsterHpProgressBar: UIProgressView!
+  @IBOutlet weak var fightTabBarItem: RAMAnimatedTabBarItem!
   
   var monsters = [Monster]()
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    fightTabBarItem.badgeValue = "17"
     
     SwiftyJsonMonstersService().allMonsters() { [weak self] jsonMonsters in
       

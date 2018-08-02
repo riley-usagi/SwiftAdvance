@@ -10,4 +10,5 @@ target 'Game' do
   pod 'Magic'
   pod 'Alamofire', '~> 4.7'
   pod 'SwiftyJSON'
+  pod 'RAMAnimatedTabBarController'
 end
