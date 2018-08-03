@@ -12,28 +12,16 @@ class FightScreen: UIViewController {
   @IBOutlet weak var fightTabBarItem: RAMAnimatedTabBarItem!
   
   var monsters = [Monster]()
-
+  var player = Player.player
+  var poring = ("Poring", 1, 500)
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    fightTabBarItem.badgeValue = "17"
-    
-    SwiftyJsonMonstersService().allMonsters() { [weak self] jsonMonsters in
-      
-      self?.monsters = jsonMonsters
-      
-      self?.monsterName.text = self?.monsters.last?.name
-    }
+    //    SwiftyJsonMonstersService().allMonsters() { [weak self] jsonMonsters in
+    //      self?.monsters = jsonMonsters
+    //      self?.monsterName.text = self?.monsters.last?.name
+    //    }
     
   }
-  
-  
-  /*
-   // In a storyboard-based application, you will often want to do a little preparation before navigation
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   // Get the new view controller using segue.destinationViewController.
-   // Pass the selected object to the new view controller.
-   }
-   */
-  
 }

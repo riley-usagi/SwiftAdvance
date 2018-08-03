@@ -96,7 +96,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Qun-el-Beg">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="Qun-el-Beg">
                                 <rect key="frame" x="85" y="332.5" width="205" height="2"/>
                             </progressView>
                         </subviews>

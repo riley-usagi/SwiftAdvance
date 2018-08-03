@@ -1,5 +1,6 @@
 import UIKit
 import Magic
+import SwiftKeychainWrapper
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -8,6 +9,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
+    // Проставляем изначальную локацию для игрока
+    if KeychainWrapper.standard.string(forKey: "playerCurrentLocation") == nil {
+      KeychainWrapper.standard.set("prt_field08", forKey: "playerCurrentLocation") 
+    }
     
     return true
   }

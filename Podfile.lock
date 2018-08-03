@@ -7,6 +7,7 @@ PODS:
   - Realm/Headers (3.7.5)
   - RealmSwift (3.7.5):
     - Realm (= 3.7.5)
+  - SwiftKeychainWrapper (3.0.1)
   - SwiftyJSON (4.1.0)
 
 DEPENDENCIES:
@@ -14,6 +15,7 @@ DEPENDENCIES:
   - Magic
   - RAMAnimatedTabBarController
   - RealmSwift
+  - SwiftKeychainWrapper
   - SwiftyJSON
 
 SPEC REPOS:
@@ -23,6 +25,7 @@ SPEC REPOS:
     - RAMAnimatedTabBarController
     - Realm
     - RealmSwift
+    - SwiftKeychainWrapper
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -31,8 +34,9 @@ SPEC CHECKSUMS:
   RAMAnimatedTabBarController: 7e259e89b669c7bc833a6441c7d8fbfd6580f473
   Realm: c286caf4dbf346ce24aad49ca76c7ce622d4a082
   RealmSwift: 2a9281e37d6de55f66f76254d49d28aeb1b729e4
+  SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: af879c011be40b8c3cffed545118d5c368bd64c7
+PODFILE CHECKSUM: c71a625b05ff8a10947a499bf7aa61135f908180
 
 COCOAPODS: 1.5.3

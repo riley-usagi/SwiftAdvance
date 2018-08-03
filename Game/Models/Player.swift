@@ -1,4 +1,5 @@
 import Foundation
+import SwiftKeychainWrapper
 
 /// Класс Игрока. Поскольку это так называемый "Одиночка" (singletone) - он доступен по всему приложению (как объект Сессии, к примеру)
 class Player {
@@ -12,4 +13,6 @@ class Player {
   var atk: Int      = 77
   var str: Int      = 5
   var agi: Int      = 5
+  
+  var currentLocation: String? = KeychainWrapper.standard.string(forKey: "playerCurrentLocation")
 }

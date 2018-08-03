@@ -11,4 +11,5 @@ target 'Game' do
   pod 'Alamofire', '~> 4.7'
   pod 'SwiftyJSON'
   pod 'RAMAnimatedTabBarController'
+  pod 'SwiftKeychainWrapper'
 end
