@@ -9,10 +9,13 @@ class Player {
   // Класс сам в себе хранит свой же единственный объект.
   static let player = Player()
   
-  var name: String  = "Riley"
-  var atk: Int      = 77
-  var str: Int      = 5
-  var agi: Int      = 5
+  var name: String    = "Riley"
+  var atkDelay: Float = 1.27
+  var atk: Int        = 77
+  var str: Int        = 5
+  var agi: Int        = 5
+  var exp: Int        = 1
+  var jExp: Int       = 1
   
   var currentLocation: String? = KeychainWrapper.standard.string(forKey: "playerCurrentLocation")
 }

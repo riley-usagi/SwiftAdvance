@@ -6,6 +6,7 @@ import SwiftKeychainWrapper
 class AppDelegate: UIResponder, UIApplicationDelegate {
   
   var window: UIWindow?
+  var currentCharacterId: Int?
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
