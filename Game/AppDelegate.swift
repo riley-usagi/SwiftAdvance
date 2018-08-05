@@ -9,12 +9,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var currentCharacterId: Int?
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    
-    // Проставляем изначальную локацию для игрока
-    if KeychainWrapper.standard.string(forKey: "playerCurrentLocation") == nil {
-      KeychainWrapper.standard.set("prt_field08", forKey: "playerCurrentLocation") 
+
+    // Генерируем пользователю уникальный id если оного ещё нет.
+    // В дальнейшем по этому к этому id будут привязываться пресонажи героя и вещи на аукционе.
+    if KeychainWrapper.standard.string(forKey: "userId") == nil {
+      KeychainWrapper.standard.set(UUID().uuidString, forKey: "userId")
     }
-    
+
     return true
   }
 
