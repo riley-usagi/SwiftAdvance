@@ -1,6 +1,10 @@
 import UIKit
+import Magic
 
 class CharactersListTableViewController: UITableViewController {
+  
+  // TODO: Брать список персонажей из базы
+  var heroes: [[String:String]] = [["name": "Riley", "level": "11"], ["name":"Jane", "level": "17"]]
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -17,27 +21,30 @@ class CharactersListTableViewController: UITableViewController {
     // Dispose of any resources that can be recreated.
   }
   
-  // MARK: - Table view data source
   
   override func numberOfSections(in tableView: UITableView) -> Int {
     // #warning Incomplete implementation, return the number of sections
-    return 0
+    return 1
   }
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     // #warning Incomplete implementation, return the number of rows
-    return 0
+    return heroes.count
   }
   
-  /*
-   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-   let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-   
-   // Configure the cell...
-   
-   return cell
-   }
-   */
+  
+  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "characterIdentifier", for: indexPath)
+
+    // Устанавливаем имена персонажей
+    cell.textLabel?.text = heroes[indexPath.row]["name"]
+    
+    // Их уровни
+    cell.detailTextLabel?.text = String("Level: \(heroes[indexPath.row]["level"]!)")
+    
+    return cell
+  }
+  
   
   /*
    // Override to support conditional editing of the table view.
