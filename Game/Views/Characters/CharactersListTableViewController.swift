@@ -3,6 +3,8 @@ import Magic
 
 class CharactersListTableViewController: UITableViewController {
   
+  @IBAction func backRacognizer(_ sender: Any) {
+  }
   // TODO: Брать список персонажей из базы
   var heroes: [[String:String]] = [["name": "Riley", "level": "11"], ["name":"Jane", "level": "17"]]
   
