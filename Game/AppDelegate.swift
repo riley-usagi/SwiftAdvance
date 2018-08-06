@@ -1,6 +1,7 @@
 import UIKit
 import Magic
 import SwiftKeychainWrapper
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -9,6 +10,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var currentCharacterId: Int?
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    
+    
+    // Отчищение базы
+    // autoclearRealmDatabase()
     
     // Генерируем пользователю уникальный id если оного ещё нет.
     // В дальнейшем по этому к этому id будут привязываться пресонажи героя и вещи на аукционе.
@@ -39,6 +44,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func applicationWillTerminate(_ application: UIApplication) {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+  }
+  
+  /// Отчищение базы. Используется в development-режиме
+  func autoclearRealmDatabase() {
+    let realmURL = Realm.Configuration.defaultConfiguration.fileURL!
+    
+    let realmURLs = [
+      realmURL,
+      realmURL.appendingPathExtension("lock"),
+      realmURL.appendingPathExtension("note"),
+      realmURL.appendingPathExtension("management")
+    ]
+    for URL in realmURLs {
+      do {
+        try FileManager.default.removeItem(at: URL)
+      } catch {
+        // handle error
+      }
+    }
   }
 }
 

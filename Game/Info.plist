@@ -30,7 +30,7 @@
 	<key>UILaunchStoryboardName</key>
 	<string>Characters</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Characters</string>
+	<string>Heroes</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

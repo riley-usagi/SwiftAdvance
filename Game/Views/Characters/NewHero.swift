@@ -79,6 +79,7 @@ class NewHero: UIViewController {
   @IBAction func createHeroAction(_ sender: UIButton) {
     let newHero   = Hero()
     newHero.name  = heroNameLabel.text!
+    newHero.str   = str
     
     try! realm.write {
       realm.add(newHero)
