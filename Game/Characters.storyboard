@@ -88,21 +88,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="tR0-x0-ehJ"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="bwF-Hb-AZl" appends="YES" id="zSK-Ej-ytT"/>
-                        </connections>
                     </view>
-                    <connections>
-                        <outlet property="swipeBackGestureRecognizer" destination="bwF-Hb-AZl" id="8nK-rX-0z5"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pj5-p2-J0g" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="YGR-Uj-tit" userLabel="Exit" sceneMemberID="exit"/>
-                <swipeGestureRecognizer direction="right" id="bwF-Hb-AZl">
-                    <connections>
-                        <action selector="backRacognizer:" destination="YGR-Uj-tit" id="g66-h3-PVd"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="761.25" y="150"/>
         </scene>
