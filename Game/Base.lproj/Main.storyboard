@@ -73,7 +73,7 @@
         <!--Fight-->
         <scene sceneID="LaD-Pe-5tG">
             <objects>
-                <viewController id="e9k-Vq-hlq" customClass="FightScreen" customModule="Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Fight" id="e9k-Vq-hlq" customClass="FightScreen" customModule="Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pt2-fm-FXS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

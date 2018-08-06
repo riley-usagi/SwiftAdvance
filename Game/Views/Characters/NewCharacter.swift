@@ -10,7 +10,6 @@ class NewCharacter: UIViewController {
   var dex         = 1
   var luk         = 1
   var statPoints  = 17 {
-    
     willSet {
       if newValue == 0 {
         createButton.isEnabled = true
