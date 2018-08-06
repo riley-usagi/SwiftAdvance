@@ -21,13 +21,14 @@
 		1459E57720F39FDF0042A57A /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459E57620F39FDF0042A57A /* RealmService.swift */; };
 		148C22C420F904B300794C83 /* JSONSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C22C320F904B300794C83 /* JSONSerializer.swift */; };
 		149869FE2115E899009BA200 /* Characters.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 149869FD2115E899009BA200 /* Characters.storyboard */; };
-		14986A012115E8E4009BA200 /* CharactersListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14986A002115E8E4009BA200 /* CharactersListTableViewController.swift */; };
+		14986A012115E8E4009BA200 /* HeroesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14986A002115E8E4009BA200 /* HeroesList.swift */; };
 		14A63CE020F3E29700AEE712 /* FightScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A63CDF20F3E29700AEE712 /* FightScreen.swift */; };
 		14A63CE220F3E52C00AEE712 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A63CE120F3E52C00AEE712 /* Player.swift */; };
 		14B4707A2110B24700B830CC /* AdaptiveTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B470792110B24700B830CC /* AdaptiveTabBarItem.swift */; };
 		14BA8B0C20F3705900992494 /* OtherMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BA8B0B20F3705900992494 /* OtherMonster.swift */; };
 		14BD444A210EFF3D005E49FC /* SwiftyJsonMonstersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BD4449210EFF3D005E49FC /* SwiftyJsonMonstersService.swift */; };
-		14E476E421178AAD00E963EA /* NewCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E476E321178AAD00E963EA /* NewCharacter.swift */; };
+		14DF7BC02118B33C00022DCA /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DF7BBF2118B33C00022DCA /* Hero.swift */; };
+		14E476E421178AAD00E963EA /* NewHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E476E321178AAD00E963EA /* NewHero.swift */; };
 		3629D9427F805F28C0C3BC98 /* Pods_Game.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1D1AAEE3EB92B291FE9B43 /* Pods_Game.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,13 +51,14 @@
 		1459E57620F39FDF0042A57A /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		148C22C320F904B300794C83 /* JSONSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializer.swift; sourceTree = "<group>"; };
 		149869FD2115E899009BA200 /* Characters.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Characters.storyboard; sourceTree = "<group>"; };
-		14986A002115E8E4009BA200 /* CharactersListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListTableViewController.swift; sourceTree = "<group>"; };
+		14986A002115E8E4009BA200 /* HeroesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesList.swift; sourceTree = "<group>"; };
 		14A63CDF20F3E29700AEE712 /* FightScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightScreen.swift; sourceTree = "<group>"; };
 		14A63CE120F3E52C00AEE712 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		14B470792110B24700B830CC /* AdaptiveTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveTabBarItem.swift; sourceTree = "<group>"; };
 		14BA8B0B20F3705900992494 /* OtherMonster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherMonster.swift; sourceTree = "<group>"; };
 		14BD4449210EFF3D005E49FC /* SwiftyJsonMonstersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJsonMonstersService.swift; sourceTree = "<group>"; };
-		14E476E321178AAD00E963EA /* NewCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCharacter.swift; sourceTree = "<group>"; };
+		14DF7BBF2118B33C00022DCA /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		14E476E321178AAD00E963EA /* NewHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHero.swift; sourceTree = "<group>"; };
 		7B1D1AAEE3EB92B291FE9B43 /* Pods_Game.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Game.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2B785BCB2B923B3407BE25 /* Pods-Game.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game.release.xcconfig"; path = "Pods/Target Support Files/Pods-Game/Pods-Game.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,8 +138,8 @@
 		149869FF2115E8BE009BA200 /* Characters */ = {
 			isa = PBXGroup;
 			children = (
-				14986A002115E8E4009BA200 /* CharactersListTableViewController.swift */,
-				14E476E321178AAD00E963EA /* NewCharacter.swift */,
+				14986A002115E8E4009BA200 /* HeroesList.swift */,
+				14E476E321178AAD00E963EA /* NewHero.swift */,
 			);
 			path = Characters;
 			sourceTree = "<group>";
@@ -149,6 +151,7 @@
 				14A63CE120F3E52C00AEE712 /* Player.swift */,
 				142F1AC9210D899C0035F5B7 /* Monster.swift */,
 				1456B3A221131CD900976B7A /* Location.swift */,
+				14DF7BBF2118B33C00022DCA /* Hero.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -308,9 +311,10 @@
 				1407209520F3961000A1C41C /* MonsterCell.swift in Sources */,
 				14A63CE220F3E52C00AEE712 /* Player.swift in Sources */,
 				1407209320F395C000A1C41C /* MonstersList.swift in Sources */,
-				14E476E421178AAD00E963EA /* NewCharacter.swift in Sources */,
+				14E476E421178AAD00E963EA /* NewHero.swift in Sources */,
 				1456B3A321131CD900976B7A /* Location.swift in Sources */,
-				14986A012115E8E4009BA200 /* CharactersListTableViewController.swift in Sources */,
+				14DF7BC02118B33C00022DCA /* Hero.swift in Sources */,
+				14986A012115E8E4009BA200 /* HeroesList.swift in Sources */,
 				1448E7F320F36D0B00187976 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

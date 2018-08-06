@@ -1,12 +1,15 @@
 import UIKit
 import Magic
+import RealmSwift
 
-class CharactersListTableViewController: UITableViewController {
+let realm = try! Realm()
+
+class HeroesList: UITableViewController {
   
-  @IBAction func backRacognizer(_ sender: Any) {
-  }
   // TODO: Брать список персонажей из базы
-  var heroes: [[String:String]] = [["name": "Riley", "level": "11"], ["name":"Jane", "level": "17"]]
+//  var heroes: [[String:String]] = [["name": "Riley", "level": "11"], ["name":"Jane", "level": "17"]]
+  let heroes = realm.objects(Hero.self)
+//  var heroes: [Hero] = [Hero()]
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -38,7 +41,7 @@ class CharactersListTableViewController: UITableViewController {
     let cell = tableView.dequeueReusableCell(withIdentifier: "characterIdentifier", for: indexPath)
 
     // Устанавливаем имена персонажей
-    cell.textLabel?.text = heroes[indexPath.row]["name"]
+//    cell.textLabel?.text = heroes[indexPath.row]["name"]
     
     // Их уровни
     cell.detailTextLabel?.text = String("Level: \(heroes[indexPath.row]["level"]!)")

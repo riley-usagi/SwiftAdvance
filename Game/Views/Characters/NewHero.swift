@@ -1,15 +1,16 @@
 import UIKit
 import Magic
 
-class NewCharacter: UIViewController {
+class NewHero: UIViewController {
   
-  var str         = 1
+  // Первоначальные характеристики персонажа
+  var str   = 1
   var agi         = 1
   var vit         = 1
   var int         = 1
   var dex         = 1
   var luk         = 1
-  var statPoints  = 17 {
+  var statPoints  = 7 {
     willSet {
       if newValue == 0 {
         createButton.isEnabled = true
