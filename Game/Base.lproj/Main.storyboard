@@ -140,7 +140,7 @@
         <!--Animated Tab Bar Controller-->
         <scene sceneID="B5V-SU-xjO">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="2hB-p4-Cc5" customClass="RAMAnimatedTabBarController" customModule="RAMAnimatedTabBarController" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2hB-p4-Cc5" customClass="RAMAnimatedTabBarController" customModule="RAMAnimatedTabBarController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N3a-gb-1gH">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

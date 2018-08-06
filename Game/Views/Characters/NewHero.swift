@@ -23,6 +23,9 @@ class NewHero: UIViewController {
     }
   }
   
+  /// Имя героя
+  @IBOutlet weak var heroNameLabel: UITextField!
+  
   /// Лейбл с указанием на оставшееся количество очков умений
   @IBOutlet weak var statPointsLabel: UILabel!
   
@@ -71,4 +74,15 @@ class NewHero: UIViewController {
       statPoints -= 1
     }
   }
+  
+  /// Создание персонажа
+  @IBAction func createHeroAction(_ sender: UIButton) {
+    let newHero   = Hero()
+    newHero.name  = heroNameLabel.text!
+    
+    try! realm.write {
+      realm.add(newHero)
+    }
+  }
+  
 }
