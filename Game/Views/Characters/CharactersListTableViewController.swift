@@ -34,7 +34,6 @@ class CharactersListTableViewController: UITableViewController {
     return heroes.count
   }
   
-  
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "characterIdentifier", for: indexPath)
 
