@@ -4,21 +4,21 @@ import RealmSwift
 
 /// Персонаж пользователя
 class Hero: Object {
-    
-  //рандомное имя для персонажа, если игрок его не ввел самомстоятельно
+
+  /// Набор случайных имён для персонажа, если пользователь его не ввел самомстоятельно
   let arrayOfDefaulNames = ["Akira", "Kichi", "Mihoko", "Orino", "Shika"]
-  @objc dynamic var name: String  = "" {
+  
+  // Информация о пользователе
+  @objc dynamic var level: Int        = 1
+  @objc dynamic var str: Int          = 1
+  @objc dynamic var location: String  = "prt_field08" 
+  @objc dynamic var name: String      = "" {
     didSet {
       if oldValue == "" {
         self.name = arrayOfDefaulNames[Int(arc4random_uniform(5) + 0)]
       }
     }
   }
-    
-  @objc dynamic var level: Int        = 1
-  @objc dynamic var str: Int          = 1
-  @objc dynamic var location: String  = "prt_field08" 
-
 }
 
 //class Monster: Object {
