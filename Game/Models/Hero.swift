@@ -15,8 +15,9 @@ class Hero: Object {
     }
   }
     
-  @objc dynamic var level: Int    = 1
-  @objc dynamic var str: Int      = 1
+  @objc dynamic var level: Int        = 1
+  @objc dynamic var str: Int          = 1
+  @objc dynamic var location: String  = "prt_field08" 
 
 }
 

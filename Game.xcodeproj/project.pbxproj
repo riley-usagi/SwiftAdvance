@@ -20,6 +20,7 @@
 		1456B3A321131CD900976B7A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1456B3A221131CD900976B7A /* Location.swift */; };
 		1459E57720F39FDF0042A57A /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459E57620F39FDF0042A57A /* RealmService.swift */; };
 		148C22C420F904B300794C83 /* JSONSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C22C320F904B300794C83 /* JSONSerializer.swift */; };
+		149755842119ABED001FC370 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149755832119ABED001FC370 /* LocationCell.swift */; };
 		149869FE2115E899009BA200 /* Heroes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 149869FD2115E899009BA200 /* Heroes.storyboard */; };
 		14986A012115E8E4009BA200 /* HeroesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14986A002115E8E4009BA200 /* HeroesList.swift */; };
 		14A63CE020F3E29700AEE712 /* FightScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A63CDF20F3E29700AEE712 /* FightScreen.swift */; };
@@ -50,6 +51,7 @@
 		1456B3A221131CD900976B7A /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		1459E57620F39FDF0042A57A /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		148C22C320F904B300794C83 /* JSONSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializer.swift; sourceTree = "<group>"; };
+		149755832119ABED001FC370 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		149869FD2115E899009BA200 /* Heroes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Heroes.storyboard; sourceTree = "<group>"; };
 		14986A002115E8E4009BA200 /* HeroesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesList.swift; sourceTree = "<group>"; };
 		14A63CDF20F3E29700AEE712 /* FightScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightScreen.swift; sourceTree = "<group>"; };
@@ -135,6 +137,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		149755822119AB88001FC370 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				149755832119ABED001FC370 /* LocationCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		149869FF2115E8BE009BA200 /* Characters */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +169,7 @@
 		14F014DF21197E8400A764C9 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				149755822119AB88001FC370 /* Cells */,
 				14F014E021197EA400A764C9 /* SettingsList.swift */,
 			);
 			path = Settings;
@@ -315,6 +326,7 @@
 				14A63CE020F3E29700AEE712 /* FightScreen.swift in Sources */,
 				1459E57720F39FDF0042A57A /* RealmService.swift in Sources */,
 				148C22C420F904B300794C83 /* JSONSerializer.swift in Sources */,
+				149755842119ABED001FC370 /* LocationCell.swift in Sources */,
 				1407209520F3961000A1C41C /* MonsterCell.swift in Sources */,
 				14A63CE220F3E52C00AEE712 /* Player.swift in Sources */,
 				1407209320F395C000A1C41C /* MonstersList.swift in Sources */,

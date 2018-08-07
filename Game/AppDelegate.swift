@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     // Очищение базы
-    // autoclearRealmDatabase()
+     autoclearRealmDatabase()
     
     // Генерируем пользователю уникальный id если оного ещё нет.
     // В дальнейшем по этому к этому id будут привязываться пресонажи героя и вещи на аукционе.
