@@ -58,6 +58,9 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <segue destination="cqy-j5-ci6" kind="show" id="YZq-SE-LpU"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -76,7 +79,7 @@
                 <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="TabController" id="cqy-j5-ci6" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ptG-EP-hwM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="318" y="545"/>
+            <point key="canvasLocation" x="-102" y="636"/>
         </scene>
         <!--New Hero-->
         <scene sceneID="ulM-AJ-lVs">
@@ -161,7 +164,7 @@
                                 <state key="normal" title="Create"/>
                                 <connections>
                                     <action selector="createHeroAction:" destination="HUp-JI-X4r" eventType="touchUpInside" id="g8b-cg-qPU"/>
-                                    <segue destination="cqy-j5-ci6" kind="show" id="d7N-HT-8J5"/>
+                                    <segue destination="sz5-X7-Eh5" kind="show" id="V2f-DR-vYB"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Statpoints: 7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAa-rs-GV3">
@@ -184,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pj5-p2-J0g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="761.25" y="150"/>
+            <point key="canvasLocation" x="896" y="151"/>
         </scene>
     </scenes>
 </document>
