@@ -4,7 +4,7 @@ import Magic
 class NewHero: UIViewController {
   
   // Первоначальные характеристики персонажа
-  var str   = 1
+  var str         = 1
   var agi         = 1
   var vit         = 1
   var int         = 1

@@ -9,6 +9,7 @@ class Hero: Object {
   let arrayOfDefaulNames = ["Akira", "Kichi", "Mihoko", "Orino", "Shika"]
   
   // Информация о пользователе
+  @objc dynamic var id: String        = ""
   @objc dynamic var level: Int        = 1
   @objc dynamic var str: Int          = 1
   @objc dynamic var location: String  = "prt_field08" 
@@ -19,14 +20,13 @@ class Hero: Object {
       }
     }
   }
-}
-
-//class Monster: Object {
-//  @objc dynamic var name = ""
-//  
-//  convenience init(json: JSON) {
-//    self.init()
-//    
-//    self.name = json["name"].stringValue
+  
+  override static func primaryKey() -> String? {
+    return "id"
+  }
+  
+//  func incrementID() -> Int {
+//    let realm = try! Realm()
+//    return (realm.objects(Hero.self).max(ofProperty: "id") as Int? ?? 0) + 1
 //  }
-//}
+}
