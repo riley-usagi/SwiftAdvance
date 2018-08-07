@@ -14,14 +14,21 @@ class NewHero: UIViewController {
     willSet {
       if newValue == 0 {
         createButton.isEnabled = true
+        //деактивируем кнопки после того как Statpoints == 0
+        for i in 0...(buttonToDisable.count - 1) {
+          buttonToDisable[i].isEnabled = false
+        }
       }
     }
     
     didSet {
       // Обновляем визуальное значение количества очков умений
-      statPointsLabel.text = String("Statpoints: \(statPoints)")
+//      statPointsLabel.text = String("Statpoints: \(statPoints)")
+        statPointsLabel.text = "Statpoints: \(statPoints)"
     }
   }
+    
+  @IBOutlet var buttonToDisable: [UIButton]!
   
   /// Имя героя
   @IBOutlet weak var heroNameLabel: UITextField!
@@ -82,8 +89,6 @@ class NewHero: UIViewController {
       }
       statPoints -= 1
     }
-    
-    
   }
   
   /// Создание персонажа
