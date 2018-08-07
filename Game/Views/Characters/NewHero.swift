@@ -35,6 +35,10 @@ class NewHero: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    /// Действие закрывающее клавиатуру
+    let hideKeyboardGesture = UITapGestureRecognizer(target: self, action: #selector(self.hideKeyboard))
+    view?.addGestureRecognizer(hideKeyboardGesture)
+    
     /// Свайп-возврат к предыдущему экрану
     let goBackSwipe = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
     goBackSwipe.direction = UISwipeGestureRecognizerDirection.right
@@ -44,6 +48,11 @@ class NewHero: UIViewController {
   /// Процесс возвращения на предыдущий экран
   @objc func respondToSwipeGesture(gesture: UIGestureRecognizer) {
     dismiss(animated: true, completion: nil)
+  }
+  
+  /// Закрывает клавиатуру при нажатии на любое место в пределах экрана
+  @objc func hideKeyboard() {
+    self.view?.endEditing(true)
   }
   
   /// Обновление статов
@@ -73,6 +82,8 @@ class NewHero: UIViewController {
       }
       statPoints -= 1
     }
+    
+    
   }
   
   /// Создание персонажа
