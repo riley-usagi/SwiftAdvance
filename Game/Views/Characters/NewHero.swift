@@ -14,6 +14,10 @@ class NewHero: UIViewController {
     willSet {
       if newValue == 0 {
         createButton.isEnabled = true
+        //деактивируем кнопки после того, как Statpoints == 0
+        for i in 0...(buttonsToDisable.count - 1) {
+            buttonsToDisable[i].isEnabled = false
+        }
       }
     }
     
@@ -23,6 +27,8 @@ class NewHero: UIViewController {
     }
   }
   
+  @IBOutlet var buttonsToDisable: [UIButton]!
+    
   /// Имя героя
   @IBOutlet weak var heroNameLabel: UITextField!
   

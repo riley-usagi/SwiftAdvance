@@ -183,6 +183,12 @@
                         <outlet property="createButton" destination="No3-Ku-wGx" id="Fe6-3t-bQi"/>
                         <outlet property="heroNameLabel" destination="B9C-uW-oYW" id="QBQ-eC-Ee1"/>
                         <outlet property="statPointsLabel" destination="bAa-rs-GV3" id="4pA-8I-3b0"/>
+                        <outletCollection property="buttonsToDisable" destination="VYj-h0-igP" collectionClass="NSMutableArray" id="LHp-ch-L3Y"/>
+                        <outletCollection property="buttonsToDisable" destination="9Ay-PE-zpK" collectionClass="NSMutableArray" id="fRm-0v-lur"/>
+                        <outletCollection property="buttonsToDisable" destination="YQI-6J-J6p" collectionClass="NSMutableArray" id="b4X-Tq-14n"/>
+                        <outletCollection property="buttonsToDisable" destination="Zw4-iJ-aza" collectionClass="NSMutableArray" id="NK8-8F-EhV"/>
+                        <outletCollection property="buttonsToDisable" destination="1l0-lD-x8M" collectionClass="NSMutableArray" id="dw6-Ye-BHl"/>
+                        <outletCollection property="buttonsToDisable" destination="4ED-2z-ZgR" collectionClass="NSMutableArray" id="qwh-Vd-wRq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pj5-p2-J0g" userLabel="First Responder" sceneMemberID="firstResponder"/>
