@@ -68,7 +68,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dtp-CD-w7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="T0E-8j-G5f" customClass="RAMLeftRotationAnimation" customModule="RAMAnimatedTabBarController"/>
             </objects>
-            <point key="canvasLocation" x="2546" y="-330"/>
+            <point key="canvasLocation" x="4018" y="-316"/>
         </scene>
         <!--Fight-->
         <scene sceneID="LaD-Pe-5tG">
@@ -114,7 +114,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Oiy-2a-bEq"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Fight" image="attack" selectedImage="settings" id="DST-Ax-lrk" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                    <tabBarItem key="tabBarItem" title="Fight" image="attack" selectedImage="attack" id="DST-Ax-lrk" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
                                 <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -135,7 +135,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m85-fT-hz3" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="fUr-oq-d1G" customClass="RAMRightRotationAnimation" customModule="RAMAnimatedTabBarController"/>
             </objects>
-            <point key="canvasLocation" x="2544" y="432"/>
+            <point key="canvasLocation" x="2612" y="564"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="vBP-Iq-Qa0">
+            <objects>
+                <tableViewController title="Settings" id="cdm-KR-AYQ" customClass="SettingsList" customModule="Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="TjP-bl-fam">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingsIdentifier" id="8G3-hM-ibf">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8G3-hM-ibf" id="kBf-wf-n2j">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cdm-KR-AYQ" id="7Bd-e0-RmW"/>
+                            <outlet property="delegate" destination="cdm-KR-AYQ" id="x7h-GW-0pG"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings" selectedImage="settings" id="PvZ-JI-Des" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="animation" destination="ki3-bC-HbS" id="C41-Vg-h9k"/>
+                        </connections>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="settingsTabBarItem" destination="PvZ-JI-Des" id="b2u-bD-bfQ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1JE-gB-v2N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="ki3-bC-HbS" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController"/>
+            </objects>
+            <point key="canvasLocation" x="2612" y="-316"/>
         </scene>
         <!--Animated Tab Bar Controller-->
         <scene sceneID="B5V-SU-xjO">
@@ -150,7 +192,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="e9k-Vq-hlq" kind="relationship" relationship="viewControllers" id="5Ay-bQ-2Ax"/>
-                        <segue destination="UuO-Cc-62G" kind="relationship" relationship="viewControllers" id="EAk-Y4-RHK"/>
+                        <segue destination="cdm-KR-AYQ" kind="relationship" relationship="viewControllers" id="EpW-tb-LQE"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9xs-PM-X3H" userLabel="First Responder" sceneMemberID="firstResponder"/>
