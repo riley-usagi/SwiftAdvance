@@ -82,8 +82,6 @@ class NewHero: UIViewController {
       }
       statPoints -= 1
     }
-    
-    
   }
   
   /// Создание персонажа
