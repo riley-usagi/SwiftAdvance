@@ -14,6 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Очищение базы
     // autoclearRealmDatabase()
     
+    openRealm()
+    
     // Генерируем пользователю уникальный id если оного ещё нет.
     // В дальнейшем по этому к этому id будут привязываться пресонажи героя и вещи на аукционе.
     if KeychainWrapper.standard.string(forKey: "userId") == nil {
@@ -21,6 +23,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     return true
+  }
+  
+  func openRealm() {
+    
+    let defaultPath = Realm.Configuration.defaultConfiguration.fileURL!
+    let path = Bundle.main.url(forResource: "default", withExtension: "realm")
+    
+    if let bundledPath = path {
+      
+      magic("use pre-populated database")
+      do {
+        try FileManager.default.removeItem(at: defaultPath)
+        try FileManager.default.copyItem(at: bundledPath, to: defaultPath)
+        
+      } catch {
+        magic("remove")
+        magic(error)
+      }
+    }
+    
+    
+    
+    //    let defaultRealmPath  = Realm.Configuration.defaultConfiguration.fileURL!
+    //    let bundleRealmPath   = Bundle.main.url(forResource: "default", withExtension: "realm")
+    //    
+    //    if !FileManager.default.fileExists(atPath: defaultRealmPath.absoluteString) {
+    //      do {
+    //        try FileManager.default.copyItem(at: bundleRealmPath!, to: defaultRealmPath)
+    //      } catch let error {
+    //        magic("error copying seeds: \(error)")
+    //      }
+    //    }
   }
   
   func applicationWillResignActive(_ application: UIApplication) {

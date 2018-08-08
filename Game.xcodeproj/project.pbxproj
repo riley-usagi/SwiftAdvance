@@ -19,6 +19,7 @@
 		145560E420F9C72E004A2C33 /* Monsters.json in Resources */ = {isa = PBXBuildFile; fileRef = 145560E320F9C72E004A2C33 /* Monsters.json */; };
 		1456B3A321131CD900976B7A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1456B3A221131CD900976B7A /* Location.swift */; };
 		1459E57720F39FDF0042A57A /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459E57620F39FDF0042A57A /* RealmService.swift */; };
+		1482C012211B716500A99C85 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 1482C011211B6E0400A99C85 /* default.realm */; };
 		148C22C420F904B300794C83 /* JSONSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C22C320F904B300794C83 /* JSONSerializer.swift */; };
 		149755842119ABED001FC370 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149755832119ABED001FC370 /* LocationCell.swift */; };
 		149869FE2115E899009BA200 /* Heroes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 149869FD2115E899009BA200 /* Heroes.storyboard */; };
@@ -50,6 +51,7 @@
 		145560E320F9C72E004A2C33 /* Monsters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Monsters.json; sourceTree = "<group>"; };
 		1456B3A221131CD900976B7A /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		1459E57620F39FDF0042A57A /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		1482C011211B6E0400A99C85 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		148C22C320F904B300794C83 /* JSONSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializer.swift; sourceTree = "<group>"; };
 		149755832119ABED001FC370 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		149869FD2115E899009BA200 /* Heroes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Heroes.storyboard; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		1448E7E620F36D0B00187976 = {
 			isa = PBXGroup;
 			children = (
+				1482C011211B6E0400A99C85 /* default.realm */,
 				1407209820F399A400A1C41C /* example.png */,
 				1407209920F399A500A1C41C /* README.md */,
 				1407209A20F399A500A1C41C /* swift_guide.playground */,
@@ -252,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1482C012211B716500A99C85 /* default.realm in Resources */,
 				1448E7FD20F36D0D00187976 /* LaunchScreen.storyboard in Resources */,
 				1448E7FA20F36D0D00187976 /* Assets.xcassets in Resources */,
 				149869FE2115E899009BA200 /* Heroes.storyboard in Resources */,

@@ -10,7 +10,7 @@ class HeroesList: UITableViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    magic(Realm.Configuration.defaultConfiguration.fileURL!)
+    // magic(Realm.Configuration.defaultConfiguration.fileURL!)
   }
   
   override func numberOfSections(in tableView: UITableView) -> Int {
