@@ -12,4 +12,5 @@ target 'Game' do
   pod 'SwiftyJSON'
   pod 'RAMAnimatedTabBarController'
   pod 'SwiftKeychainWrapper'
+  pod 'Fakery'
 end

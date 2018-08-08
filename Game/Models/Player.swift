@@ -7,7 +7,7 @@ class Player {
   private init() {}
   
   // Класс сам в себе хранит свой же единственный объект.
-  static let player = Player()
+  static let player   = Player()
   
   var name: String    = "Riley"
   var atkDelay: Float = 1.27

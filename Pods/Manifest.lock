@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.7.3)
+  - Fakery (3.3.0)
   - Magic (3.0.3)
   - RAMAnimatedTabBarController (3.5.0)
   - Realm (3.7.5):
@@ -12,6 +13,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - Fakery
   - Magic
   - RAMAnimatedTabBarController
   - RealmSwift
@@ -21,6 +23,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Fakery
     - Magic
     - RAMAnimatedTabBarController
     - Realm
@@ -30,6 +33,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Fakery: 3aae11a87721c807c18c6456500d088c1230d3e5
   Magic: 4cf0cae9f1c7c1f89332a23737309fa49b422796
   RAMAnimatedTabBarController: 7e259e89b669c7bc833a6441c7d8fbfd6580f473
   Realm: c286caf4dbf346ce24aad49ca76c7ce622d4a082
@@ -37,6 +41,6 @@ SPEC CHECKSUMS:
   SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: c71a625b05ff8a10947a499bf7aa61135f908180
+PODFILE CHECKSUM: 0beee3f96abe0e5f20492cc857ce1f4d016790fe
 
 COCOAPODS: 1.5.3
