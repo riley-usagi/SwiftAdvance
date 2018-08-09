@@ -6,7 +6,7 @@ class SettingsList: UITableViewController {
   
   @IBOutlet weak var settingsTabBarItem: RAMAnimatedTabBarItem!
   
-  @IBOutlet weak var currentHeroCell: LocationCell!
+  @IBOutlet weak var currentHeroCell: UITableViewCell!
   
   override func viewDidLoad() {
     super.viewDidLoad()
