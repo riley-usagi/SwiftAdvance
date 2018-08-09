@@ -14,7 +14,7 @@ class Hero: Object {
   @objc dynamic var str: Int     = 1
   @objc dynamic var heroLocation: String      = "prt_field08"
   //@objc dynamic var currentHeroLocation: Location
-//  var locations = List<Location>()
+  var locations = List<Location>()
   @objc dynamic var name: String = "" {
     didSet {
       if oldValue == "" {

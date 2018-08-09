@@ -12,7 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var currentCharacterId: Int?
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    
+    magic(Realm.Configuration.defaultConfiguration.fileURL!)
     // Очищение базы
     //autoclearRealmDatabase()
     
@@ -82,6 +82,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       do {
         try FileManager.default.removeItem(at: URL)
       } catch {
+        magic(error)
         // handle error
       }
     }

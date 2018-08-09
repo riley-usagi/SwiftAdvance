@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1407209B20F399A500A1C41C /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = 1407209820F399A400A1C41C /* example.png */; };
-		1407209C20F399A500A1C41C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1407209920F399A500A1C41C /* README.md */; };
 		142F1ACA210D899C0035F5B7 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F1AC9210D899C0035F5B7 /* Monster.swift */; };
 		1448E7F320F36D0B00187976 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448E7F220F36D0B00187976 /* AppDelegate.swift */; };
 		1448E7F820F36D0B00187976 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1448E7F620F36D0B00187976 /* Main.storyboard */; };
@@ -17,7 +15,6 @@
 		145560E420F9C72E004A2C33 /* Monsters.json in Resources */ = {isa = PBXBuildFile; fileRef = 145560E320F9C72E004A2C33 /* Monsters.json */; };
 		1456B3A321131CD900976B7A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1456B3A221131CD900976B7A /* Location.swift */; };
 		1459E57720F39FDF0042A57A /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459E57620F39FDF0042A57A /* RealmService.swift */; };
-		1482C012211B716500A99C85 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 1482C011211B6E0400A99C85 /* default.realm */; };
 		148C22C420F904B300794C83 /* JSONSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C22C320F904B300794C83 /* JSONSerializer.swift */; };
 		149869FE2115E899009BA200 /* Heroes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 149869FD2115E899009BA200 /* Heroes.storyboard */; };
 		14986A012115E8E4009BA200 /* HeroesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14986A002115E8E4009BA200 /* HeroesList.swift */; };
@@ -30,6 +27,7 @@
 		14F014E121197EA400A764C9 /* SettingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F014E021197EA400A764C9 /* SettingsList.swift */; };
 		14F6C30D211C2DF200B54D13 /* Locations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F6C30C211C2DF200B54D13 /* Locations.storyboard */; };
 		14F6C310211C2E4000B54D13 /* LocationsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F6C30F211C2E4000B54D13 /* LocationsList.swift */; };
+		14F6C313211C4BF100B54D13 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 14F6C312211C47F100B54D13 /* default.realm */; };
 		3629D9427F805F28C0C3BC98 /* Pods_Game.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1D1AAEE3EB92B291FE9B43 /* Pods_Game.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +46,6 @@
 		145560E320F9C72E004A2C33 /* Monsters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Monsters.json; sourceTree = "<group>"; };
 		1456B3A221131CD900976B7A /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		1459E57620F39FDF0042A57A /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
-		1482C011211B6E0400A99C85 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		148C22C320F904B300794C83 /* JSONSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializer.swift; sourceTree = "<group>"; };
 		149869FD2115E899009BA200 /* Heroes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Heroes.storyboard; sourceTree = "<group>"; };
 		14986A002115E8E4009BA200 /* HeroesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesList.swift; sourceTree = "<group>"; };
@@ -61,6 +58,7 @@
 		14F014E021197EA400A764C9 /* SettingsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsList.swift; sourceTree = "<group>"; };
 		14F6C30C211C2DF200B54D13 /* Locations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Locations.storyboard; sourceTree = "<group>"; };
 		14F6C30F211C2E4000B54D13 /* LocationsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsList.swift; sourceTree = "<group>"; };
+		14F6C312211C47F100B54D13 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		7B1D1AAEE3EB92B291FE9B43 /* Pods_Game.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Game.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2B785BCB2B923B3407BE25 /* Pods-Game.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game.release.xcconfig"; path = "Pods/Target Support Files/Pods-Game/Pods-Game.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,7 +89,7 @@
 		1448E7E620F36D0B00187976 = {
 			isa = PBXGroup;
 			children = (
-				1482C011211B6E0400A99C85 /* default.realm */,
+				14F6C312211C47F100B54D13 /* default.realm */,
 				1407209820F399A400A1C41C /* example.png */,
 				1407209920F399A500A1C41C /* README.md */,
 				1407209A20F399A500A1C41C /* swift_guide.playground */,
@@ -268,13 +266,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1482C012211B716500A99C85 /* default.realm in Resources */,
+				14F6C313211C4BF100B54D13 /* default.realm in Resources */,
 				1448E7FD20F36D0D00187976 /* LaunchScreen.storyboard in Resources */,
 				1448E7FA20F36D0D00187976 /* Assets.xcassets in Resources */,
 				149869FE2115E899009BA200 /* Heroes.storyboard in Resources */,
-				1407209C20F399A500A1C41C /* README.md in Resources */,
 				14F6C30D211C2DF200B54D13 /* Locations.storyboard in Resources */,
-				1407209B20F399A500A1C41C /* example.png in Resources */,
 				145560E420F9C72E004A2C33 /* Monsters.json in Resources */,
 				1448E7F820F36D0B00187976 /* Main.storyboard in Resources */,
 			);
