@@ -9,7 +9,7 @@ class Player {
   // Класс сам в себе хранит свой же единственный объект.
   static let player   = Player()
   
-  // var currentLocation: String? = KeychainWrapper.standard.string(forKey: "playerCurrentLocation")
+  var id: String? = KeychainWrapper.standard.string(forKey: "userId")
   var heroes: [Hero]?
   var currentHero: Hero?
 }
