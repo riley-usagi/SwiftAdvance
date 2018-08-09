@@ -14,7 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Очищение базы
     // autoclearRealmDatabase()
     
-    openRealm()
+    // Заполнение базы изначальными данными
+    seeds()
     
     // Генерируем пользователю уникальный id если оного ещё нет.
     // В дальнейшем по этому к этому id будут привязываться пресонажи героя и вещи на аукционе.
@@ -25,20 +26,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     return true
   }
   
-  func openRealm() {
+  /// Заполнение базы данных начальными данными, если базы ещё нет
+  func seeds() {
     
-    let defaultPath = Realm.Configuration.defaultConfiguration.fileURL!
-    let path = Bundle.main.url(forResource: "default", withExtension: "realm")
+    let realmDatabase = Realm.Configuration.defaultConfiguration.fileURL!
+    let seedsFile     = Bundle.main.url(forResource: "default", withExtension: "realm")
     
-    if let bundledPath = path {
-      
-      magic("use pre-populated database")
+    if let bundledPath = seedsFile {
+      magic("Заполнение базы данных")
       do {
-        try FileManager.default.removeItem(at: defaultPath)
-        try FileManager.default.copyItem(at: bundledPath, to: defaultPath)
-        
+        // Удаляем базу и заполняем заново
+        try FileManager.default.removeItem(at: realmDatabase)
+        try FileManager.default.copyItem(at: bundledPath, to: realmDatabase)
       } catch {
-        magic("remove")
         magic(error)
       }
     }
