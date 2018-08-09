@@ -6,6 +6,5 @@ import RealmSwift
 class Location: Object {
   @objc dynamic var name: String = ""
   @objc dynamic var hero: Hero?
-  // TODO: Добавить монстров на локации
-  
+  // TODO: Добавить монстров на локацииЯ взял по примеру из документации и создал связку Hero has_many Location(s)
 }
