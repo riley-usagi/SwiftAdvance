@@ -17,5 +17,7 @@ class Player {
   var exp: Int        = 1
   var jExp: Int       = 1
   
-  var currentLocation: String? = KeychainWrapper.standard.string(forKey: "playerCurrentLocation")
+  // var currentLocation: String? = KeychainWrapper.standard.string(forKey: "playerCurrentLocation")
+  var heroes: [Hero]?
+  var currentHero: Hero?
 }

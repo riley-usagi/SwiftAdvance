@@ -10,7 +10,6 @@ class HeroesList: UITableViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    // magic(Realm.Configuration.defaultConfiguration.fileURL!)
   }
   
   override func numberOfSections(in tableView: UITableView) -> Int {
@@ -31,5 +30,9 @@ class HeroesList: UITableViewController {
     cell.detailTextLabel?.text = String("Level: \(heroes[indexPath.row].level)")
     
     return cell
+  }
+  
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    Player.player.currentHero = heroes[indexPath.row]
   }
 }

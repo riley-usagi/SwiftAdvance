@@ -207,6 +207,7 @@
                         </connections>
                     </tabBarItem>
                     <connections>
+                        <outlet property="heroLocationCell" destination="mem-7l-Ctd" id="kW2-Of-s5V"/>
                         <outlet property="settingsTabBarItem" destination="PvZ-JI-Des" id="b2u-bD-bfQ"/>
                     </connections>
                 </tableViewController>
