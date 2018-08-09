@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1407209320F395C000A1C41C /* MonstersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1407209220F395C000A1C41C /* MonstersList.swift */; };
 		1407209520F3961000A1C41C /* MonsterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1407209420F3961000A1C41C /* MonsterCell.swift */; };
 		1407209B20F399A500A1C41C /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = 1407209820F399A400A1C41C /* example.png */; };
 		1407209C20F399A500A1C41C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1407209920F399A500A1C41C /* README.md */; };
@@ -36,7 +35,6 @@
 
 /* Begin PBXFileReference section */
 		0E8DC402F5A30DB27E49C058 /* Pods-Game.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Game/Pods-Game.debug.xcconfig"; sourceTree = "<group>"; };
-		1407209220F395C000A1C41C /* MonstersList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonstersList.swift; sourceTree = "<group>"; };
 		1407209420F3961000A1C41C /* MonsterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterCell.swift; sourceTree = "<group>"; };
 		1407209820F399A400A1C41C /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
 		1407209920F399A500A1C41C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -84,7 +82,6 @@
 			children = (
 				14F014DF21197E8400A764C9 /* Settings */,
 				149869FF2115E8BE009BA200 /* Characters */,
-				1407209220F395C000A1C41C /* MonstersList.swift */,
 				1407209420F3961000A1C41C /* MonsterCell.swift */,
 				14A63CDF20F3E29700AEE712 /* FightScreen.swift */,
 			);
@@ -335,7 +332,6 @@
 				149755842119ABED001FC370 /* LocationCell.swift in Sources */,
 				1407209520F3961000A1C41C /* MonsterCell.swift in Sources */,
 				14A63CE220F3E52C00AEE712 /* Player.swift in Sources */,
-				1407209320F395C000A1C41C /* MonstersList.swift in Sources */,
 				14F014E121197EA400A764C9 /* SettingsList.swift in Sources */,
 				14E476E421178AAD00E963EA /* NewHero.swift in Sources */,
 				1456B3A321131CD900976B7A /* Location.swift in Sources */,

@@ -11,65 +11,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Monsters-->
-        <scene sceneID="EkB-3Q-jJ7">
-            <objects>
-                <tableViewController id="UuO-Cc-62G" customClass="MonstersList" customModule="Game" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oT1-7x-AMo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MonsterCell" textLabel="J46-Pe-4j2" detailTextLabel="K6L-8W-a7r" style="IBUITableViewCellStyleSubtitle" id="Ich-LV-8iI" customClass="MonsterCell" customModule="Game" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ich-LV-8iI" id="gcz-lt-2TI">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="J46-Pe-4j2">
-                                            <rect key="frame" x="16" y="5" width="33.5" height="20.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K6L-8W-a7r">
-                                            <rect key="frame" x="16" y="25.5" width="33" height="14.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="monsterLevel" destination="K6L-8W-a7r" id="zUe-md-obA"/>
-                                    <outlet property="monsterName" destination="J46-Pe-4j2" id="NfG-An-gi3"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="UuO-Cc-62G" id="N2S-DP-SbB"/>
-                            <outlet property="delegate" destination="UuO-Cc-62G" id="rn5-of-xEN"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Monsters" image="settings" selectedImage="settings" id="7c2-uW-HFa" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
-                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                        <connections>
-                            <outlet property="animation" destination="T0E-8j-G5f" id="fMT-dO-GvA"/>
-                        </connections>
-                    </tabBarItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Dtp-CD-w7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="T0E-8j-G5f" customClass="RAMLeftRotationAnimation" customModule="RAMAnimatedTabBarController"/>
-            </objects>
-            <point key="canvasLocation" x="4018" y="-316"/>
-        </scene>
         <!--Fight-->
         <scene sceneID="LaD-Pe-5tG">
             <objects>
@@ -175,12 +116,28 @@
                                             <segue destination="eJJ-DW-5bQ" kind="show" id="s2f-Dg-Pea"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="7jN-PQ-abM">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="X98-Nu-VXx" detailTextLabel="twh-cL-TLy" style="IBUITableViewCellStyleSubtitle" id="7jN-PQ-abM">
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7jN-PQ-abM" id="giA-g0-PpS">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Change hero location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X98-Nu-VXx">
+                                                    <rect key="frame" x="16" y="5" width="163.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Current location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="twh-cL-TLy">
+                                                    <rect key="frame" x="16" y="25.5" width="91.5" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="XBo-aG-qKP">
@@ -210,7 +167,7 @@
                         </connections>
                     </tabBarItem>
                     <connections>
-                        <outlet property="heroLocationCell" destination="mem-7l-Ctd" id="kW2-Of-s5V"/>
+                        <outlet property="currentHeroCell" destination="mem-7l-Ctd" id="kW2-Of-s5V"/>
                         <outlet property="settingsTabBarItem" destination="PvZ-JI-Des" id="b2u-bD-bfQ"/>
                     </connections>
                 </tableViewController>
@@ -225,7 +182,7 @@
                 <viewControllerPlaceholder storyboardName="Heroes" referencedIdentifier="HeroesList" id="eJJ-DW-5bQ" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWN-cQ-How" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3108" y="-571"/>
+            <point key="canvasLocation" x="3120" y="-317"/>
         </scene>
         <!--Animated Tab Bar Controller-->
         <scene sceneID="B5V-SU-xjO">
