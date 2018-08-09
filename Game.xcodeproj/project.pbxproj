@@ -111,6 +111,7 @@
 		1448E7F120F36D0B00187976 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				14F6C30A211C28CA00B54D13 /* Storyboards */,
 				1459E57520F39FCF0042A57A /* Services */,
 				1407209120F3957300A1C41C /* Views */,
 				14BA8B0A20F3704700992494 /* Models */,
@@ -119,9 +120,6 @@
 				1448E7FE20F36D0D00187976 /* Info.plist */,
 				148C22C320F904B300794C83 /* JSONSerializer.swift */,
 				145560E320F9C72E004A2C33 /* Monsters.json */,
-				1448E7FB20F36D0D00187976 /* LaunchScreen.storyboard */,
-				1448E7F620F36D0B00187976 /* Main.storyboard */,
-				149869FD2115E899009BA200 /* Heroes.storyboard */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -162,6 +160,16 @@
 				14F014E021197EA400A764C9 /* SettingsList.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		14F6C30A211C28CA00B54D13 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1448E7FB20F36D0D00187976 /* LaunchScreen.storyboard */,
+				1448E7F620F36D0B00187976 /* Main.storyboard */,
+				149869FD2115E899009BA200 /* Heroes.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		51E21835427E5DE17B0B7F95 /* Frameworks */ = {
