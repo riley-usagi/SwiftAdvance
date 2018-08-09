@@ -11,8 +11,14 @@ class SettingsList: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    // Устанавливаем даные о текущем герое и его положении на карте
-    heroLocationCell.textLabel?.text        = Player.player.currentHero?.name
-    heroLocationCell.detailTextLabel?.text  = Player.player.currentHero?.heroLocation
+    // Вывод информации о текущем герое и его локации
+    heroLocationCell.detailTextLabel?.text = characterDetail(name: Player.player.currentHero?.name, location: Player.player.currentHero?.heroLocation)
+  }
+  
+  func characterDetail(name: String?, location: String?) -> String {
+    guard !(name == nil) && !(location == nil) else {
+      return ""
+    }
+    return String("\(String(describing: name!)) - \(String(describing: location!))")
   }
 }

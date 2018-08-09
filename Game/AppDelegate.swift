@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // autoclearRealmDatabase()
     
     // Заполнение базы изначальными данными
-    // seeds()
+    seeds()
     
     // Генерируем пользователю уникальный id если оного ещё нет.
     // В дальнейшем по этому к этому id будут привязываться пресонажи героя и вещи на аукционе.
@@ -24,37 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     return true
-  }
-  
-  /// Заполнение базы данных начальными данными, если базы ещё нет
-  func seeds() {
-    
-    let realmDatabase = Realm.Configuration.defaultConfiguration.fileURL!
-    let seedsFile     = Bundle.main.url(forResource: "default", withExtension: "realm")
-    
-    if let bundledPath = seedsFile {
-      magic("Заполнение базы данных")
-      do {
-        // Удаляем базу и заполняем заново
-        try FileManager.default.removeItem(at: realmDatabase)
-        try FileManager.default.copyItem(at: bundledPath, to: realmDatabase)
-      } catch {
-        magic(error)
-      }
-    }
-    
-    
-    
-    //    let defaultRealmPath  = Realm.Configuration.defaultConfiguration.fileURL!
-    //    let bundleRealmPath   = Bundle.main.url(forResource: "default", withExtension: "realm")
-    //    
-    //    if !FileManager.default.fileExists(atPath: defaultRealmPath.absoluteString) {
-    //      do {
-    //        try FileManager.default.copyItem(at: bundleRealmPath!, to: defaultRealmPath)
-    //      } catch let error {
-    //        magic("error copying seeds: \(error)")
-    //      }
-    //    }
   }
   
   func applicationWillResignActive(_ application: UIApplication) {
@@ -77,6 +46,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func applicationWillTerminate(_ application: UIApplication) {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+  }
+  
+  /// Заполнение базы данных начальными данными, если базы ещё нет
+  func seeds() {
+    
+    let realmDatabase = Realm.Configuration.defaultConfiguration.fileURL!
+    let seedsFile     = Bundle.main.url(forResource: "default", withExtension: "realm")
+    
+    if let bundledPath = seedsFile {
+      do {
+        // Удаляем базу и заполняем заново
+        try FileManager.default.removeItem(at: realmDatabase)          
+        try FileManager.default.copyItem(at: bundledPath, to: realmDatabase)
+        magic("Заполнение базы данных")
+      } catch {
+        magic(error)
+      }
+    }
   }
   
   /// Отчищение базы. Используется в development-режиме
