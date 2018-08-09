@@ -4,7 +4,7 @@ import RealmSwift
 
 class LocationsList: UITableViewController {
   
-  let heroes = realm.objects(Hero.self)
+  let locations = realm.objects(Location.self)
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -28,12 +28,14 @@ class LocationsList: UITableViewController {
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     // #warning Incomplete implementation, return the number of rows
-    return 0
+    return locations.count
   }
   
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "locationIdentifier", for: indexPath)
+    
+    cell.detailTextLabel?.text = locations[indexPath.row].name
     
     return cell
   }

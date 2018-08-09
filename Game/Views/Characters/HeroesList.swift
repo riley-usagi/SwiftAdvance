@@ -2,7 +2,7 @@ import UIKit
 import Magic
 import RealmSwift
 
-let realm = try! Realm()
+
 
 class HeroesList: UITableViewController {
 

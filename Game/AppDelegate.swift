@@ -3,6 +3,8 @@ import Magic
 import SwiftKeychainWrapper
 import RealmSwift
 
+let realm = try! Realm()
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
   
@@ -12,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
     // Очищение базы
-    // autoclearRealmDatabase()
+    //autoclearRealmDatabase()
     
     // Заполнение базы изначальными данными
     seeds()

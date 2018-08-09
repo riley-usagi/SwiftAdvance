@@ -171,6 +171,7 @@
                     </tabBarItem>
                     <connections>
                         <outlet property="currentHeroCell" destination="mem-7l-Ctd" id="kW2-Of-s5V"/>
+                        <outlet property="currentHeroLocationCell" destination="7jN-PQ-abM" id="K93-aS-3WA"/>
                         <outlet property="settingsTabBarItem" destination="PvZ-JI-Des" id="b2u-bD-bfQ"/>
                     </connections>
                 </tableViewController>
