@@ -12,12 +12,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var currentCharacterId: Int?
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    magic(Realm.Configuration.defaultConfiguration.fileURL!)
     // Очищение базы
     //autoclearRealmDatabase()
     
     // Заполнение базы изначальными данными
-    seeds()
+    // seeds()
     
     // Генерируем пользователю уникальный id если оного ещё нет.
     // В дальнейшем по этому к этому id будут привязываться пресонажи героя и вещи на аукционе.

@@ -2,15 +2,12 @@ import UIKit
 import Magic
 import RealmSwift
 
-
-
 class HeroesList: UITableViewController {
 
   let heroes = realm.objects(Hero.self)
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    magic(realm.configuration.fileURL!)
   }
   
   override func numberOfSections(in tableView: UITableView) -> Int {
