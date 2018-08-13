@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		142BB9E42121F1E800EFB778 /* Seeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BB9E32121F1E800EFB778 /* Seeds.swift */; };
 		142F1ACA210D899C0035F5B7 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F1AC9210D899C0035F5B7 /* Monster.swift */; };
 		1448E7F320F36D0B00187976 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448E7F220F36D0B00187976 /* AppDelegate.swift */; };
 		1448E7F820F36D0B00187976 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1448E7F620F36D0B00187976 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 		1407209820F399A400A1C41C /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
 		1407209920F399A500A1C41C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1407209A20F399A500A1C41C /* swift_guide.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = swift_guide.playground; sourceTree = "<group>"; };
+		142BB9E32121F1E800EFB778 /* Seeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seeds.swift; sourceTree = "<group>"; };
 		142F1AC9210D899C0035F5B7 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 		1448E7EF20F36D0B00187976 /* Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1448E7F220F36D0B00187976 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				1448E7FE20F36D0D00187976 /* Info.plist */,
 				148C22C320F904B300794C83 /* JSONSerializer.swift */,
 				145560E320F9C72E004A2C33 /* Monsters.json */,
+				142BB9E32121F1E800EFB778 /* Seeds.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				14981F9D211EA3F9003D799A /* LocationScreen.swift in Sources */,
 				14F014E121197EA400A764C9 /* SettingsList.swift in Sources */,
 				14F6C310211C2E4000B54D13 /* LocationsList.swift in Sources */,
+				142BB9E42121F1E800EFB778 /* Seeds.swift in Sources */,
 				14E476E421178AAD00E963EA /* NewHero.swift in Sources */,
 				1456B3A321131CD900976B7A /* Location.swift in Sources */,
 				14DF7BC02118B33C00022DCA /* Hero.swift in Sources */,
