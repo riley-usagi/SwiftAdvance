@@ -3,24 +3,33 @@ import RealmSwift
 import Magic
 
 
+var heroes: [Hero] = [Hero()]
 
 /// Удаление базы данных и создание новых записей
 struct Seeds {
+  
   func reInit() {
     
+    let riley = Hero()
+    riley.name = "Riley"
+    riley.str = 17
+    riley.agi = 11
+    
+    let djaflienda = Hero()
+    djaflienda.name = "Djaflienda"
+    djaflienda.str = 22
+    djaflienda.agi = 12
+    
+    heroes = [riley, djaflienda]
+    
     try! realm.write {
-      realm.deleteAll()
     }
     magic("Database cleared")
     
-    let newHero   = Hero()
-    newHero.name  = "Riley"
-    newHero.str   = 17
-    newHero.agi   = 11
-    
     do {
       try realm.write {
-        realm.add(newHero)
+        realm.deleteAll()
+        realm.add(heroes)
       }
     } catch {
       magic(error)
