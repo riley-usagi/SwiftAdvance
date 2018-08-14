@@ -3,7 +3,14 @@ import Magic
 import SwiftKeychainWrapper
 import RealmSwift
 
-let realm = try! Realm()
+/// Временная настройка для dev-окружения. Удаляем базу целиком, если необходимы миграции.
+let config = Realm.Configuration(
+  schemaVersion: 0,
+  deleteRealmIfMigrationNeeded: true
+)
+
+/// Инстанс Realm'a
+let realm = try! Realm(configuration: config)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,6 +31,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       KeychainWrapper.standard.set(UUID().uuidString, forKey: "userId")
     }
     
+    let seeds = Seeds()
+    seeds.reInit()
+
     return true
   }
   

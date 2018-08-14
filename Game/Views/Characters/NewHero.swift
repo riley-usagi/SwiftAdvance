@@ -96,6 +96,7 @@ class NewHero: UIViewController {
     let newHero   = Hero()
     newHero.name  = heroNameLabel.text!
     newHero.str   = str
+    newHero.agi   = agi
     
     try! realm.write {
       realm.add(newHero)
