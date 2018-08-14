@@ -9,12 +9,11 @@ let faker = Faker()
 class Hero: Object {
   
   // Информация о пользователе
-  @objc dynamic var id: String            = UUID().uuidString
-  @objc dynamic var level: Int            = 1
-  @objc dynamic var str: Int              = 1
-  @objc dynamic var agi: Int              = 1
-  @objc dynamic var heroLocation: String  = "prt_field08"
-  //@objc dynamic var currentHeroLocation: Location
+  @objc dynamic var id: String = UUID().uuidString
+  @objc dynamic var level: Int = 1
+  @objc dynamic var str: Int   = 1
+  @objc dynamic var agi: Int   = 1
+  @objc dynamic var currentHeroLocation: Location? = Location()
   var locations = List<Location>()
   
   // TODO: Косяк

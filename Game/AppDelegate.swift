@@ -34,6 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Полная зачистка базы и загрузка тестовых данных
     let seeds = Seeds()
     seeds.reInit()
+    
+    magic(realm.configuration.fileURL!)
 
     return true
   }
