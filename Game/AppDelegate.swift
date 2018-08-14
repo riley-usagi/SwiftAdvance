@@ -31,6 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       KeychainWrapper.standard.set(UUID().uuidString, forKey: "userId")
     }
     
+    // Полная зачистка базы и загрузка тестовых данных
     let seeds = Seeds()
     seeds.reInit()
 
