@@ -7,6 +7,12 @@ class RealmService {
   
   var realm = try! Realm()
   
+  // NOTE: Maybe working wrong
+  func all<T: Object>(in realm: Realm = try! Realm()) -> Results<T> {
+    return realm.objects(T.self)
+  }
+  
+  
   func create<T: Object>(_ object: T) {
     do {
       try realm.write {
