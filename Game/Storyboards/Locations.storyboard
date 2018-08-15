@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="-808" y="-92"/>
         </scene>
-        <!--View Controller-->
+        <!--Location Screen-->
         <scene sceneID="9Pf-jt-5D0">
             <objects>
-                <viewController id="8XG-Jf-IlO" sceneMemberID="viewController">
+                <viewController id="8XG-Jf-IlO" customClass="LocationScreen" customModule="Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DVC-Db-Z9m">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,6 +90,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="CqD-sw-f63"/>
                     </view>
+                    <connections>
+                        <outlet property="locationName" destination="9Pa-xf-dN9" id="z61-Ua-4us"/>
+                        <outlet property="mapSelect" destination="EXz-CA-wbo" id="TEp-ip-rkI"/>
+                        <outlet property="monstersList" destination="uz0-e5-e1H" id="l06-NC-00X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bdg-Xr-4fF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
