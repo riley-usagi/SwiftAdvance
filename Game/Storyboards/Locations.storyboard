@@ -43,7 +43,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="8XG-Jf-IlO" kind="show" id="kXY-MI-v2a"/>
+                                    <segue destination="8XG-Jf-IlO" kind="show" identifier="toLocationScreen" id="kXY-MI-v2a"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -60,7 +60,7 @@
         <!--Location Screen-->
         <scene sceneID="9Pf-jt-5D0">
             <objects>
-                <viewController id="8XG-Jf-IlO" customClass="LocationScreen" customModule="Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LocationScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8XG-Jf-IlO" customClass="LocationScreen" customModule="Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DVC-Db-Z9m">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -42,17 +42,19 @@ class LocationsList: UITableViewController {
   }
   
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    selectedLocation = locations[indexPath.row]
+    
+//    let location = locations[indexPath.row]
+//    let vc = storyboard?.instantiateViewController(withIdentifier: "LocationScreen") as! LocationScreen
+    
+//    vc.locationName.text = location.name
+//    vc.locationName?.text = "Hello?"
+    
+  
+    performSegue(withIdentifier: "toLocationScreen", sender: self)
+    
+//    self.present(vc, animated: true, completion: nil)
+    
     
   }
-  
-  
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    // Get the new view controller using segue.destinationViewController.
-    let locationScreenController = segue.destination as! LocationScreen
-    
-    // Pass the selected object to the new view controller.    
-    // locationScreenController.location = selectedLocation
-    locationScreenController.locationName?.text = "rwefwqef"
-  }
+
 }

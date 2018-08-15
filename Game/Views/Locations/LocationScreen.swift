@@ -6,12 +6,10 @@ class LocationScreen: UIViewController {
   @IBOutlet weak var monstersList: UITableView!
   @IBOutlet weak var mapSelect: UIButton!
   
-  var location: Location?
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    locationName.text = location?.name
   }
   
   override func didReceiveMemoryWarning() {
