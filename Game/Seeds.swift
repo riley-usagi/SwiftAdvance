@@ -2,16 +2,41 @@ import Foundation
 import RealmSwift
 import Magic
 
-var heroes: [Hero] = [Hero()]
 
 /// Удаление базы данных и создание новых записей
 struct Seeds {
   
   func reInit() {
 
-    let startedLocation = Location()
-    startedLocation.name = "prt_field08"
+    let startedLocation   = Location()
+    startedLocation.name  = "prt_field08"
     
+    var monsters: [Monster]
+    
+    let poring    = Monster()
+    poring.name   = "Poring"
+    poring.level  = 1
+    poring.location = startedLocation
+    
+    let pupa      = Monster()
+    pupa.name     = "Pupa"
+    pupa.level    = 2
+    pupa.location = startedLocation
+    
+    let lunatic   = Monster()
+    lunatic.name  = "Lunatic"
+    lunatic.level = 3
+    lunatic.location = startedLocation
+    
+    let drops     = Monster()
+    drops.name    = "Drops"
+    drops.level   = 3
+    drops.location = startedLocation
+    
+    monsters = [poring, pupa, lunatic, drops]
+    
+    var heroes: [Hero]
+
     let riley   = Hero()
     riley.name  = "Riley"
     riley.level = 18
@@ -33,6 +58,7 @@ struct Seeds {
       try realm.write {
         realm.deleteAll()
         magic("Database cleared")
+        realm.add(monsters)
         realm.add(startedLocation)
         realm.add(heroes)
       }
