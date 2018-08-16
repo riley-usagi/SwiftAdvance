@@ -41,20 +41,46 @@ class LocationsList: UITableViewController {
     return cell
   }
   
-  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    
+//  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//    
 //    let location = locations[indexPath.row]
 //    let vc = storyboard?.instantiateViewController(withIdentifier: "LocationScreen") as! LocationScreen
-    
+//    
 //    vc.locationName.text = location.name
-//    vc.locationName?.text = "Hello?"
-    
-  
-    performSegue(withIdentifier: "toLocationScreen", sender: self)
-    
-//    self.present(vc, animated: true, completion: nil)
-    
-    
-  }
+//    
+//    performSegue(withIdentifier: "toLocationScreen", sender: self)
+//  }
 
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let locationName = locations[indexPath.row].name
+    performSegue(withIdentifier: "toLocationScreen", sender: locationName)
+  }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let destination = segue.destination as? LocationScreen {
+      
+      if let locationName = sender as? String {
+        destination.locationName?.text = locationName
+      } else {
+        destination.locationName?.text = "wtf!!!!!"
+      }
+      
+    }
+  }
+  
+//  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//    let categoryTitle = categories[indexPath.row].title
+//    performSegue(withIdentifier: "toCategory", sender: categoryTitle)
+//  }
+
+//  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//    if let destination = segue.destination as? CategoryVC {
+//      if let categoryTitle = sender as? String {
+//        destination.categoryTitle = categoryTitle
+//      } else {
+//        destination.categoryTitle = "Undefined category"
+//      }
+//    }
+//  }
+  
 }
