@@ -41,46 +41,23 @@ class LocationsList: UITableViewController {
     return cell
   }
   
-//  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//    
-//    let location = locations[indexPath.row]
-//    let vc = storyboard?.instantiateViewController(withIdentifier: "LocationScreen") as! LocationScreen
-//    
-//    vc.locationName.text = location.name
-//    
-//    performSegue(withIdentifier: "toLocationScreen", sender: self)
-//  }
-
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let locationName = locations[indexPath.row].name
-    performSegue(withIdentifier: "toLocationScreen", sender: locationName)
+    let location = locations[indexPath.row]
+    performSegue(withIdentifier: "toLocationScreen", sender: location)
   }
-  
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if let destination = segue.destination as? LocationScreen {
-      
-      if let locationName = sender as? String {
-        destination.locationName?.text = locationName
-      } else {
-        destination.locationName?.text = "wtf!!!!!"
-      }
-      
-    }
-  }
-  
-//  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//    let categoryTitle = categories[indexPath.row].title
-//    performSegue(withIdentifier: "toCategory", sender: categoryTitle)
-//  }
 
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    magic("hello?")
+  }
+  
 //  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//    if let destination = segue.destination as? CategoryVC {
-//      if let categoryTitle = sender as? String {
-//        destination.categoryTitle = categoryTitle
+//    if let destination = segue.destination as? LocationScreen {
+//      if let selectedLocation = sender as? Location {
+//        magic("Message for 'If'")
+//        destination.location = selectedLocation
 //      } else {
-//        destination.categoryTitle = "Undefined category"
-//      }
+//        magic("Message for 'Else'")
+//      } 
 //    }
 //  }
-  
 }
