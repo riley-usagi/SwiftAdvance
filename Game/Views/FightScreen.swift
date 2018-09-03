@@ -12,7 +12,11 @@ class FightScreen: UIViewController {
   @IBOutlet weak var monsterHpProgressBar: UIProgressView!
   @IBOutlet weak var fightTabBarItem: RAMAnimatedTabBarItem!
   
-  var monsters  = [Monster]()
+  var monsters = [Monster]()
+  
+  
+  
+  
   
   var timer = Timer()
 

@@ -33,6 +33,6 @@ class HeroesList: UITableViewController {
   }
   
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    Player.player.currentHero = heroes[indexPath.row]
+    Player.shared.currentHero = heroes[indexPath.row]
   }
 }

@@ -7,7 +7,7 @@ class Player {
   private init() {}
   
   // Класс сам в себе хранит свой же единственный объект.
-  static let player   = Player()
+  static let shared = Player()
   
   var id: String? = KeychainWrapper.standard.string(forKey: "userId")
   var heroes: [Hero]?

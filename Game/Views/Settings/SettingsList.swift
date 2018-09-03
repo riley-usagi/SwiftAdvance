@@ -17,7 +17,7 @@ class SettingsList: UITableViewController {
     //currentHeroCell.detailTextLabel?.text = characterDetails(name: Player.player.currentHero?.name, location: Player.player.currentHero?.currentHeroLocation?.name)
     
     // Информация о текущей локации героя
-    currentHeroLocationCell.detailTextLabel?.text = locationDetails(location: Player.player.currentHero?.currentHeroLocation?.name)
+    currentHeroLocationCell.detailTextLabel?.text = locationDetails(location: Player.shared.currentHero?.currentHeroLocation?.name)
   }
   
   func characterDetails(name: String?, location: String?) -> String {
