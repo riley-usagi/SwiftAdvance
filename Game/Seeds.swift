@@ -6,6 +6,7 @@ import Magic
 /// Удаление базы данных и создание новых записей
 struct Seeds {
   
+  /// Пересоздание базы
   func reInit() {
 
     let startedLocation   = Location()
@@ -13,25 +14,33 @@ struct Seeds {
     
     var monsters: [Monster]
     
-    let poring    = Monster()
-    poring.name   = "Poring"
-    poring.level  = 1
+    let poring      = Monster()
+    poring.name     = "Poring"
+    poring.level    = 1
     poring.location = startedLocation
+    poring.hp       = 50
+    poring.atk      = Int.random(inRange: 8...9)
     
     let pupa      = Monster()
     pupa.name     = "Pupa"
     pupa.level    = 2
     pupa.location = startedLocation
+    pupa.hp       = 427
+    pupa.atk      = 0
     
-    let lunatic   = Monster()
-    lunatic.name  = "Lunatic"
-    lunatic.level = 3
-    lunatic.location = startedLocation
+    let lunatic       = Monster()
+    lunatic.name      = "Lunatic"
+    lunatic.level     = 3
+    lunatic.location  = startedLocation
+    lunatic.hp        = 60
+    lunatic.atk       = Int.random(inRange: 11...12)
     
-    let drops     = Monster()
-    drops.name    = "Drops"
-    drops.level   = 3
-    drops.location = startedLocation
+    let drops       = Monster()
+    drops.name      = "Drops"
+    drops.level     = 3
+    drops.location  = startedLocation
+    drops.hp        = 55
+    drops.atk       = Int.random(inRange: 12...13)
     
     monsters = [poring, pupa, lunatic, drops]
     

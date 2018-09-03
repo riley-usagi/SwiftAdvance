@@ -4,10 +4,12 @@ import Magic
 class HeroFightOperation: AsyncOperation {
  
   var monsterFightOperation: AsyncOperation?
+  var currentMonster: Monster?
   
-  convenience init(monsterFightOperation: AsyncOperation) {
+  convenience init(monsterFightOperation: AsyncOperation, currentMonster: Monster) {
     self.init()
     self.monsterFightOperation = monsterFightOperation
+    self.currentMonster = currentMonster
   }
   
   override func start() {

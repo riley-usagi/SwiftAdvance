@@ -31,10 +31,9 @@
 		14F6C310211C2E4000B54D13 /* LocationsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F6C30F211C2E4000B54D13 /* LocationsList.swift */; };
 		14F6C313211C4BF100B54D13 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 14F6C312211C47F100B54D13 /* default.realm */; };
 		14FF45C2213D41BF0042A44A /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FF45C1213D41BF0042A44A /* AsyncOperation.swift */; };
-		14FF45C5213D542E0042A44A /* HeroThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FF45C4213D542E0042A44A /* HeroThread.swift */; };
-		14FF45C7213D54590042A44A /* MonsterThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FF45C6213D54590042A44A /* MonsterThread.swift */; };
 		14FF45CD213D72C40042A44A /* HeroFightOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FF45CC213D72C40042A44A /* HeroFightOperation.swift */; };
 		14FF45CF213D72E90042A44A /* MonsterFightOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FF45CE213D72E90042A44A /* MonsterFightOperation.swift */; };
+		14FF45D2213DA3AB0042A44A /* RandomInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FF45D1213DA3AB0042A44A /* RandomInteger.swift */; };
 		3629D9427F805F28C0C3BC98 /* Pods_Game.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1D1AAEE3EB92B291FE9B43 /* Pods_Game.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,10 +68,9 @@
 		14F6C30F211C2E4000B54D13 /* LocationsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsList.swift; sourceTree = "<group>"; };
 		14F6C312211C47F100B54D13 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		14FF45C1213D41BF0042A44A /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
-		14FF45C4213D542E0042A44A /* HeroThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroThread.swift; sourceTree = "<group>"; };
-		14FF45C6213D54590042A44A /* MonsterThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterThread.swift; sourceTree = "<group>"; };
 		14FF45CC213D72C40042A44A /* HeroFightOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroFightOperation.swift; sourceTree = "<group>"; };
 		14FF45CE213D72E90042A44A /* MonsterFightOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterFightOperation.swift; sourceTree = "<group>"; };
+		14FF45D1213DA3AB0042A44A /* RandomInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomInteger.swift; sourceTree = "<group>"; };
 		7B1D1AAEE3EB92B291FE9B43 /* Pods_Game.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Game.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2B785BCB2B923B3407BE25 /* Pods-Game.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game.release.xcconfig"; path = "Pods/Target Support Files/Pods-Game/Pods-Game.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,7 +123,7 @@
 		1448E7F120F36D0B00187976 /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				14FF45C3213D54130042A44A /* Threads */,
+				14FF45D0213DA38F0042A44A /* Extensions */,
 				14FF45BE213D40E30042A44A /* Operations */,
 				14F6C30B211C2AAA00B54D13 /* Controllers */,
 				14F6C30A211C28CA00B54D13 /* Storyboards */,
@@ -217,13 +215,12 @@
 			path = Operations;
 			sourceTree = "<group>";
 		};
-		14FF45C3213D54130042A44A /* Threads */ = {
+		14FF45D0213DA38F0042A44A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				14FF45C4213D542E0042A44A /* HeroThread.swift */,
-				14FF45C6213D54590042A44A /* MonsterThread.swift */,
+				14FF45D1213DA3AB0042A44A /* RandomInteger.swift */,
 			);
-			path = Threads;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		51E21835427E5DE17B0B7F95 /* Frameworks */ = {
@@ -379,7 +376,6 @@
 				14A63CE020F3E29700AEE712 /* FightScreen.swift in Sources */,
 				1459E57720F39FDF0042A57A /* RealmService.swift in Sources */,
 				148C22C420F904B300794C83 /* JSONSerializer.swift in Sources */,
-				14FF45C7213D54590042A44A /* MonsterThread.swift in Sources */,
 				14A63CE220F3E52C00AEE712 /* Player.swift in Sources */,
 				14FF45CF213D72E90042A44A /* MonsterFightOperation.swift in Sources */,
 				14981F9D211EA3F9003D799A /* LocationScreen.swift in Sources */,
@@ -391,7 +387,7 @@
 				14DF7BC02118B33C00022DCA /* Hero.swift in Sources */,
 				14FF45CD213D72C40042A44A /* HeroFightOperation.swift in Sources */,
 				14986A012115E8E4009BA200 /* HeroesList.swift in Sources */,
-				14FF45C5213D542E0042A44A /* HeroThread.swift in Sources */,
+				14FF45D2213DA3AB0042A44A /* RandomInteger.swift in Sources */,
 				14FF45C2213D41BF0042A44A /* AsyncOperation.swift in Sources */,
 				1448E7F320F36D0B00187976 /* AppDelegate.swift in Sources */,
 			);
