@@ -25,8 +25,8 @@ class FightScreen: UIViewController {
     let heroFightOperation    = HeroFightOperation(monsterFightOperation: monsterFightOperation)
     monsterFightOperation.heroFightOperation = heroFightOperation
     
-    heroFightOperation.qualityOfService     = .userInteractive
-    monsterFightOperation.qualityOfService  = .background
+    //heroFightOperation.qualityOfService     = .userInteractive
+    //monsterFightOperation.qualityOfService  = .background
     
     operationQueue.addOperation(heroFightOperation)
     operationQueue.addOperation(monsterFightOperation)

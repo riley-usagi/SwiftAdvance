@@ -10,18 +10,18 @@ class HeroFightOperation: AsyncOperation {
     self.monsterFightOperation = monsterFightOperation
   }
   
-  override func main() {
+  override func start() {
     magic("Hero attack!")
     
-    var monsterHp = 55
-    let heroAtk = 7
+    var monsterHp = 34
+    let heroAtk = 9
     
-    while monsterHp > 0 {
+    while monsterHp > 0 && !(monsterFightOperation?.isFinished)! {
       monsterHp -= heroAtk
       magic("monster hp is \(monsterHp)")
       sleep(1)
     }
     
-    monsterFightOperation?.cancel()
+    self.state = .isFinished
   }
 }
