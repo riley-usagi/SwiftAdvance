@@ -25,19 +25,16 @@ class FightScreen: UIViewController {
     let heroFightOperation    = HeroFightOperation(monsterFightOperation: monsterFightOperation)
     monsterFightOperation.heroFightOperation = heroFightOperation
     
-    //heroFightOperation.qualityOfService     = .userInteractive
-    //monsterFightOperation.qualityOfService  = .background
-    
     operationQueue.addOperation(heroFightOperation)
     operationQueue.addOperation(monsterFightOperation)
     
 
-    // MARK: Taimer and progressbar
+    // MARK: Timer and progressbar
     
     // timer = Timer.scheduledTimer(timeInterval: TimeInterval(player.atkDelay), target: self, selector: #selector(FightScreen.updateProgressView), userInfo: nil, repeats: true)
     
     // monsterHpProgressBar.setProgress(1.0, animated: false)
-    
+     
     // SwiftyJsonMonstersService().allMonsters() { [weak self] jsonMonsters in
     // self?.monsters = jsonMonsters
     // self?.monsterName.text = self?.monsters.last?.name
