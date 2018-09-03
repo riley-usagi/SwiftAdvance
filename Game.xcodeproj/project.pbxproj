@@ -33,8 +33,6 @@
 		14FF45C2213D41BF0042A44A /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FF45C1213D41BF0042A44A /* AsyncOperation.swift */; };
 		14FF45C5213D542E0042A44A /* HeroThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FF45C4213D542E0042A44A /* HeroThread.swift */; };
 		14FF45C7213D54590042A44A /* MonsterThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FF45C6213D54590042A44A /* MonsterThread.swift */; };
-		14FF45C9213D57D10042A44A /* HeroAttackOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FF45C8213D57D10042A44A /* HeroAttackOperation.swift */; };
-		14FF45CB213D581B0042A44A /* MonsterAttackOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FF45CA213D581B0042A44A /* MonsterAttackOperation.swift */; };
 		14FF45CD213D72C40042A44A /* HeroFightOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FF45CC213D72C40042A44A /* HeroFightOperation.swift */; };
 		14FF45CF213D72E90042A44A /* MonsterFightOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FF45CE213D72E90042A44A /* MonsterFightOperation.swift */; };
 		3629D9427F805F28C0C3BC98 /* Pods_Game.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1D1AAEE3EB92B291FE9B43 /* Pods_Game.framework */; };
@@ -73,8 +71,6 @@
 		14FF45C1213D41BF0042A44A /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
 		14FF45C4213D542E0042A44A /* HeroThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroThread.swift; sourceTree = "<group>"; };
 		14FF45C6213D54590042A44A /* MonsterThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterThread.swift; sourceTree = "<group>"; };
-		14FF45C8213D57D10042A44A /* HeroAttackOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroAttackOperation.swift; sourceTree = "<group>"; };
-		14FF45CA213D581B0042A44A /* MonsterAttackOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterAttackOperation.swift; sourceTree = "<group>"; };
 		14FF45CC213D72C40042A44A /* HeroFightOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroFightOperation.swift; sourceTree = "<group>"; };
 		14FF45CE213D72E90042A44A /* MonsterFightOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterFightOperation.swift; sourceTree = "<group>"; };
 		7B1D1AAEE3EB92B291FE9B43 /* Pods_Game.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Game.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -215,8 +211,6 @@
 			isa = PBXGroup;
 			children = (
 				14FF45C1213D41BF0042A44A /* AsyncOperation.swift */,
-				14FF45C8213D57D10042A44A /* HeroAttackOperation.swift */,
-				14FF45CA213D581B0042A44A /* MonsterAttackOperation.swift */,
 				14FF45CC213D72C40042A44A /* HeroFightOperation.swift */,
 				14FF45CE213D72E90042A44A /* MonsterFightOperation.swift */,
 			);
@@ -391,7 +385,6 @@
 				14981F9D211EA3F9003D799A /* LocationScreen.swift in Sources */,
 				14F014E121197EA400A764C9 /* SettingsList.swift in Sources */,
 				14F6C310211C2E4000B54D13 /* LocationsList.swift in Sources */,
-				14FF45C9213D57D10042A44A /* HeroAttackOperation.swift in Sources */,
 				142BB9E42121F1E800EFB778 /* Seeds.swift in Sources */,
 				14E476E421178AAD00E963EA /* NewHero.swift in Sources */,
 				1456B3A321131CD900976B7A /* Location.swift in Sources */,
@@ -401,7 +394,6 @@
 				14FF45C5213D542E0042A44A /* HeroThread.swift in Sources */,
 				14FF45C2213D41BF0042A44A /* AsyncOperation.swift in Sources */,
 				1448E7F320F36D0B00187976 /* AppDelegate.swift in Sources */,
-				14FF45CB213D581B0042A44A /* MonsterAttackOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
