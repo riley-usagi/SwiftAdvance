@@ -20,7 +20,7 @@ class LocationsList: UITableViewController {
   }
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "locationIdentifier", for: indexPath)
+    let cell = tableView.dequeueReusableCell(withIdentifier: "locationCell", for: indexPath)
     
     cell.detailTextLabel?.text = locations[indexPath.row].name
     
@@ -29,21 +29,16 @@ class LocationsList: UITableViewController {
   
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let location = locations[indexPath.row]
-    performSegue(withIdentifier: "toLocationScreen", sender: location)
+    performSegue(withIdentifier: "toLocationSegue", sender: location)
   }
 
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    magic("hello?")
+    
+    if let destination = segue.destination as? LocationScreen {
+
+      if let selectedLocation = sender as? Location {
+        destination.location = selectedLocation
+      }
+    }
   }
-  
-//  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//    if let destination = segue.destination as? LocationScreen {
-//      if let selectedLocation = sender as? Location {
-//        magic("Message for 'If'")
-//        destination.location = selectedLocation
-//      } else {
-//        magic("Message for 'Else'")
-//      } 
-//    }
-//  }
 }

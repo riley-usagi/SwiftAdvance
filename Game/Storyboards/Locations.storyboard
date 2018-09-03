@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="locationIdentifier" textLabel="VHs-xK-rX2" detailTextLabel="XwF-tz-fwU" style="IBUITableViewCellStyleSubtitle" id="2YX-dt-VMb">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="locationCell" textLabel="VHs-xK-rX2" detailTextLabel="XwF-tz-fwU" style="IBUITableViewCellStyleSubtitle" id="2YX-dt-VMb">
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2YX-dt-VMb" id="6DY-EL-0ep">
@@ -42,9 +42,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="8XG-Jf-IlO" kind="show" identifier="toLocationScreen" id="kXY-MI-v2a"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -52,6 +49,9 @@
                             <outlet property="delegate" destination="0sr-TZ-IJz" id="kuk-9K-7Sg"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="8XG-Jf-IlO" kind="show" identifier="toLocationSegue" id="HNO-kZ-Sa2"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SOs-Vw-4iN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

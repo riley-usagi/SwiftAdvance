@@ -3,8 +3,10 @@ import Magic
 import RealmSwift
 
 class HeroesList: UITableViewController {
-
+  
   let heroes = realm.objects(Hero.self)
+  
+  var gameResults: [Int]?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -17,10 +19,10 @@ class HeroesList: UITableViewController {
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return heroes.count
   }
-  
+    
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "heroIdentifier", for: indexPath)
-
+    
     // Устанавливаем имена персонажей
     cell.textLabel?.text = heroes[indexPath.row].name
     

@@ -13,7 +13,6 @@ class LocationScreen: UIViewController {
   }
   
   override func viewWillAppear(_ animated: Bool) {
-    magic(location)
     locationName.text = location?.name
   }
 }
