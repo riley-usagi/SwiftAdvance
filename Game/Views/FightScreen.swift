@@ -15,7 +15,7 @@ class FightScreen: UIViewController {
   var monsters = [Monster]()
   
   var timer = Timer()
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -23,10 +23,10 @@ class FightScreen: UIViewController {
     
     // monsterHpProgressBar.setProgress(1.0, animated: false)
     
-    //    SwiftyJsonMonstersService().allMonsters() { [weak self] jsonMonsters in
-    //      self?.monsters = jsonMonsters
-    //      self?.monsterName.text = self?.monsters.last?.name
-    //    }
+    // SwiftyJsonMonstersService().allMonsters() { [weak self] jsonMonsters in
+      // self?.monsters = jsonMonsters
+      // self?.monsterName.text = self?.monsters.last?.name
+    // }
     
   }
   
