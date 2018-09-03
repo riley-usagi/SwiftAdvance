@@ -14,10 +14,6 @@ class FightScreen: UIViewController {
   
   var monsters = [Monster]()
   
-  
-  
-  
-  
   var timer = Timer()
 
   override func viewDidLoad() {

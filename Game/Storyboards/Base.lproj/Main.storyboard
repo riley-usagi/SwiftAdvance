@@ -186,7 +186,7 @@
                 <viewControllerPlaceholder storyboardName="Locations" referencedIdentifier="LocationsList" id="sjB-EM-zi0" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hik-WC-Vpo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3121" y="-431"/>
+            <point key="canvasLocation" x="3316" y="-345"/>
         </scene>
         <!--HeroesList-->
         <scene sceneID="4FP-6x-5Dz">
@@ -194,7 +194,7 @@
                 <viewControllerPlaceholder storyboardName="Heroes" referencedIdentifier="HeroesList" id="eJJ-DW-5bQ" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWN-cQ-How" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3120" y="-317"/>
+            <point key="canvasLocation" x="3302" y="-292"/>
         </scene>
         <!--Animated Tab Bar Controller-->
         <scene sceneID="B5V-SU-xjO">
