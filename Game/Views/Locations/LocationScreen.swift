@@ -4,7 +4,9 @@ import Magic
 class LocationScreen: UIViewController {
   
   @IBOutlet weak var locationName: UILabel!
-  @IBOutlet weak var mapSelect: UIButton!
+  @IBAction func mapSelect(_ sender: Any) {
+    magic("trying to change location")
+  }
   
   var location: Location?
 

@@ -78,6 +78,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Перейти"/>
                                 <connections>
+                                    <action selector="mapSelect:" destination="8XG-Jf-IlO" eventType="touchUpInside" id="hSl-14-tgZ"/>
                                     <segue destination="23g-X9-uKI" kind="show" id="QaN-Nh-jWV"/>
                                 </connections>
                             </button>
@@ -87,7 +88,6 @@
                     </view>
                     <connections>
                         <outlet property="locationName" destination="9Pa-xf-dN9" id="z61-Ua-4us"/>
-                        <outlet property="mapSelect" destination="EXz-CA-wbo" id="TEp-ip-rkI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bdg-Xr-4fF" userLabel="First Responder" sceneMemberID="firstResponder"/>
