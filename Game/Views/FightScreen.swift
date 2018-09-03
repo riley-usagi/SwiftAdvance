@@ -1,6 +1,7 @@
 import UIKit
 import Magic
 import Alamofire
+import RealmSwift
 import RAMAnimatedTabBarController
 
 /// Экран битвы
@@ -12,17 +13,25 @@ class FightScreen: UIViewController {
   @IBOutlet weak var monsterHpProgressBar: UIProgressView!
   @IBOutlet weak var fightTabBarItem: RAMAnimatedTabBarItem!
   
-  var monsters = [Monster]()
+//  var monsters = [Monster]()
+//  var monsters = Player.shared.currentHero?.currentHeroLocation?.monsters
+  
+  
+  
   
   var timer = Timer()
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    
+    let monsters = realm.objects(Monster.self)
+    var randomMonster = monsters.randomItem()
+    
     let operationQueue = OperationQueue()
     
     let monsterFightOperation = MonsterFightOperation()
-    let heroFightOperation    = HeroFightOperation(monsterFightOperation: monsterFightOperation)
+    let heroFightOperation    = HeroFightOperation(monsterFightOperation: monsterFightOperation, currentMonster: randomMonster)
     monsterFightOperation.heroFightOperation = heroFightOperation
     
     operationQueue.addOperation(heroFightOperation)

@@ -14,9 +14,10 @@ class Hero: Object {
   @objc dynamic var str: Int   = 1
   @objc dynamic var agi: Int   = 1
   @objc dynamic var currentHeroLocation: Location? = Location()
+  @objc dynamic var atk: Int   = 1
+
   var locations = List<Location>()
   
-  // TODO: Косяк
   @objc dynamic var name: String = "" {
     didSet {
       if oldValue == "" {

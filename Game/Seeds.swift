@@ -19,7 +19,7 @@ struct Seeds {
     poring.level    = 1
     poring.location = startedLocation
     poring.hp       = 50
-    poring.atk      = Int.random(inRange: 8...9)
+    poring.atk      = Int.randomInteger(inRange: 8...9)
     
     let pupa      = Monster()
     pupa.name     = "Pupa"
@@ -33,14 +33,14 @@ struct Seeds {
     lunatic.level     = 3
     lunatic.location  = startedLocation
     lunatic.hp        = 60
-    lunatic.atk       = Int.random(inRange: 11...12)
+    lunatic.atk       = Int.randomInteger(inRange: 11...12)
     
     let drops       = Monster()
     drops.name      = "Drops"
     drops.level     = 3
     drops.location  = startedLocation
     drops.hp        = 55
-    drops.atk       = Int.random(inRange: 12...13)
+    drops.atk       = Int.randomInteger(inRange: 12...13)
     
     monsters = [poring, pupa, lunatic, drops]
     
@@ -52,6 +52,7 @@ struct Seeds {
     riley.str   = 17
     riley.agi   = 11
     riley.currentHeroLocation = startedLocation
+    riley.atk   = 17
     
     let djaflienda    = Hero()
     djaflienda.name   = "Djaflienda"
@@ -59,9 +60,9 @@ struct Seeds {
     djaflienda.str    = 22
     djaflienda.agi    = 12
     djaflienda.currentHeroLocation = startedLocation
+    djaflienda.atk    = 11
     
     heroes = [riley, djaflienda]
-    
     
     do {
       try realm.write {
