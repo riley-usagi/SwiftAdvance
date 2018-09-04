@@ -14,11 +14,7 @@ class FightScreen: UIViewController {
   @IBOutlet weak var fightTabBarItem: RAMAnimatedTabBarItem!
   
 //  var monsters = [Monster]()
-//  var monsters = Player.shared.currentHero?.currentHeroLocation?.monsters
-  
-  
-  
-  
+
   var timer = Timer()
   
   override func viewDidLoad() {
@@ -26,16 +22,16 @@ class FightScreen: UIViewController {
     
     
     let monsters = realm.objects(Monster.self)
-    var randomMonster = monsters.randomItem()
+    let randomMonster = monsters.randomItem()
     
     let operationQueue = OperationQueue()
     
     let monsterFightOperation = MonsterFightOperation()
     let heroFightOperation    = HeroFightOperation(monsterFightOperation: monsterFightOperation, currentMonster: randomMonster)
-    monsterFightOperation.heroFightOperation = heroFightOperation
+//    monsterFightOperation.heroFightOperation = heroFightOperation
     
     operationQueue.addOperation(heroFightOperation)
-    operationQueue.addOperation(monsterFightOperation)
+//    operationQueue.addOperation(monsterFightOperation)
     
 
     // MARK: Timer and progressbar

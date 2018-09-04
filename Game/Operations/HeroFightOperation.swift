@@ -4,23 +4,25 @@ import Magic
 class HeroFightOperation: AsyncOperation {
  
   var monsterFightOperation: AsyncOperation?
-  var currentMonster: Monster?
+  var monsterHp: Int = 0
+  var monsterAtk: Int = 0
   var hero: Hero = Player.shared.currentHero!
   
   convenience init(monsterFightOperation: AsyncOperation, currentMonster: Monster) {
     self.init()
     self.monsterFightOperation  = monsterFightOperation
-    self.currentMonster         = currentMonster
+    self.monsterHp = currentMonster.hp
+    self.monsterAtk = currentMonster.atk
   }
   
   override func start() {
     magic("Hero attack!")
 
-    while (currentMonster?.hp)! > 0 && !(monsterFightOperation?.isFinished)! {
-      currentMonster?.hp -= hero.atk
-      magic("monster hp is \(String(describing: currentMonster?.hp))")
-      sleep(1)
-    }
+//    while monsterHp > 0 && !(monsterFightOperation?.isFinished)! {
+//      monsterHp -= hero.atk
+//      magic("monster hp is \(String(describing: monsterHp))")
+//      sleep(1)
+//    }
     
     self.state = .isFinished
   }
