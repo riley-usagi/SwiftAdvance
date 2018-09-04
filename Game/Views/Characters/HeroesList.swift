@@ -2,8 +2,10 @@ import UIKit
 import Magic
 import RealmSwift
 
+/// Список героев пользователя
 class HeroesList: UITableViewController {
   
+  /// Список героев
   let heroes = realm.objects(Hero.self)
   
   override func viewDidLoad() {
