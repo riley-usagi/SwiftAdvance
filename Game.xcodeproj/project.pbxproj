@@ -40,9 +40,7 @@
 
 /* Begin PBXFileReference section */
 		0E8DC402F5A30DB27E49C058 /* Pods-Game.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Game/Pods-Game.debug.xcconfig"; sourceTree = "<group>"; };
-		1407209820F399A400A1C41C /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
 		1407209920F399A500A1C41C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		1407209A20F399A500A1C41C /* swift_guide.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = swift_guide.playground; sourceTree = "<group>"; };
 		142BB9E32121F1E800EFB778 /* Seeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seeds.swift; sourceTree = "<group>"; };
 		142F1AC9210D899C0035F5B7 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 		1448E7EF20F36D0B00187976 /* Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,9 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				14F6C312211C47F100B54D13 /* default.realm */,
-				1407209820F399A400A1C41C /* example.png */,
 				1407209920F399A500A1C41C /* README.md */,
-				1407209A20F399A500A1C41C /* swift_guide.playground */,
 				1448E7F120F36D0B00187976 /* Game */,
 				1448E7F020F36D0B00187976 /* Products */,
 				58DDB04EFE8F287414E5AD36 /* Pods */,
