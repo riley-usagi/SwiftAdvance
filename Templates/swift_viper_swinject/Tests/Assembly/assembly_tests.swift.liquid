@@ -1,0 +1,46 @@
+//
+//  {{ prefix }}{{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import Quick
+import Nimble
+@testable import {{ module_info.project_name }}
+
+class {{ module_info.name }}ModuleAssemblySpec: QuickSpec {
+
+    override func spec() {
+
+        let viewController = {{ module_info.name }}ViewController.instantiate()
+
+        describe("Checking module creation") {
+
+            it("Must be {{ module_info.name }}ViewController") {
+                expect(viewController).to(beAKindOf({{ module_info.name }}ViewController.self))
+            }
+
+            it("Must contain correct output") {
+                expect(viewController.output).toNot(beNil())
+                expect(viewController.output).to(beAKindOf({{ module_info.name }}Presenter.self))
+            }
+
+            let presenter = viewController.output as! {{ module_info.name }}Presenter
+            it("Must contain view, interactor & router") {
+                expect(presenter.view).toNot(beNil())
+                expect(presenter.router).toNot(beNil())
+                expect(presenter.interactor).toNot(beNil())
+            }
+
+            let interactor: {{ module_info.name }}Interactor = presenter.interactor as! {{ module_info.name }}Interactor
+            it("Must contain output") {
+                expect(interactor.output).toNot(beNil())
+            }
+
+            //let router: {{ module_info.name }}Router = presenter.router as! {{ module_info.name }}Router
+        }
+    }
+}
+

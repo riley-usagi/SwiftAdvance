@@ -1,0 +1,6 @@
+framework module LightRoute {
+  umbrella header "LightRoute-umbrella.h"
+
+  export *
+  module * { export * }
+}

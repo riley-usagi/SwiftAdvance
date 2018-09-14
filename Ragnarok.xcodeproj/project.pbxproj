@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1421024B214BA162001D6904 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1421024A214BA162001D6904 /* AppDelegate.swift */; };
+		14210250214BA162001D6904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1421024E214BA162001D6904 /* Main.storyboard */; };
+		14210252214BA163001D6904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14210251214BA163001D6904 /* Assets.xcassets */; };
+		14210255214BA163001D6904 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14210253214BA163001D6904 /* LaunchScreen.storyboard */; };
+		143BA09A214BACC60091A807 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BA099214BACC60091A807 /* ApplicationAssembly.swift */; };
+		320DB1A536DD01EAD85348E9 /* FightModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 010C79A8BE2833804DB8CC2C /* FightModule.storyboard */; };
+		523D5F41164334A79595F6C6 /* FightInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5534DD32D259E9AB0FC15CFE /* FightInteractorInput.swift */; };
+		53CF50931F59740688E15D67 /* FightInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C02241593256C61A3E5CC3 /* FightInteractorOutput.swift */; };
+		598B8FBC5D88C537735424E0 /* FightAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132A8BB0FF3734092D5E0F39 /* FightAssembly.swift */; };
+		6723274774719D0CC0982BE8 /* FightViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730402989816A0CBF9216147 /* FightViewOutput.swift */; };
+		7207C84E4184999D42E62CD3 /* FightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC4F14F80A05CFDDBC150C /* FightViewController.swift */; };
+		829909020A1C90FAA8DC9068 /* FightModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547ADCB701776E73A28BE44 /* FightModuleInput.swift */; };
+		864A894E8EEF967AA8E5CB75 /* FightRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA25CD77606D5F92EB1D2162 /* FightRouter.swift */; };
+		9BF5A0868572D53F21E08891 /* FightViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFF02ED033FE722535BE4DD /* FightViewInput.swift */; };
+		A29BCC282AC964E2664A27AF /* FightInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD76111365F2D3709032AC9 /* FightInteractor.swift */; };
+		B5A74DF622282C099E0F7463 /* FightRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FA2AB235D924AA2AC8A856 /* FightRouterInput.swift */; };
+		B794DB74285960102F4D89FF /* Pods_Ragnarok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB76FA7793F4FD7022796522 /* Pods_Ragnarok.framework */; };
+		D2E249B544BBF0D7F019AE98 /* FightPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF609E191468D3BC83991B9B /* FightPresenter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		010C79A8BE2833804DB8CC2C /* FightModule.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = FightModule.storyboard; sourceTree = "<group>"; };
+		09C02241593256C61A3E5CC3 /* FightInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FightInteractorOutput.swift; sourceTree = "<group>"; };
+		132A8BB0FF3734092D5E0F39 /* FightAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FightAssembly.swift; sourceTree = "<group>"; };
+		14210247214BA162001D6904 /* Ragnarok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ragnarok.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1421024A214BA162001D6904 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1421024F214BA162001D6904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14210251214BA163001D6904 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14210254214BA163001D6904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14210256214BA163001D6904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		143BA099214BACC60091A807 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
+		21F2A9B62EA458CD62CCADCE /* Pods-Ragnarok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ragnarok.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ragnarok/Pods-Ragnarok.debug.xcconfig"; sourceTree = "<group>"; };
+		4C2B3082CF0C4DE11AD8E8F7 /* Pods-Ragnarok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ragnarok.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ragnarok/Pods-Ragnarok.release.xcconfig"; sourceTree = "<group>"; };
+		5534DD32D259E9AB0FC15CFE /* FightInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FightInteractorInput.swift; sourceTree = "<group>"; };
+		6CD76111365F2D3709032AC9 /* FightInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FightInteractor.swift; sourceTree = "<group>"; };
+		730402989816A0CBF9216147 /* FightViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FightViewOutput.swift; sourceTree = "<group>"; };
+		8EFF02ED033FE722535BE4DD /* FightViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FightViewInput.swift; sourceTree = "<group>"; };
+		B5AC4F14F80A05CFDDBC150C /* FightViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FightViewController.swift; sourceTree = "<group>"; };
+		C547ADCB701776E73A28BE44 /* FightModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FightModuleInput.swift; sourceTree = "<group>"; };
+		DB76FA7793F4FD7022796522 /* Pods_Ragnarok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ragnarok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA25CD77606D5F92EB1D2162 /* FightRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FightRouter.swift; sourceTree = "<group>"; };
+		F9FA2AB235D924AA2AC8A856 /* FightRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FightRouterInput.swift; sourceTree = "<group>"; };
+		FF609E191468D3BC83991B9B /* FightPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FightPresenter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14210244214BA162001D6904 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B794DB74285960102F4D89FF /* Pods_Ragnarok.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1421023E214BA162001D6904 = {
+			isa = PBXGroup;
+			children = (
+				14210249214BA162001D6904 /* Ragnarok */,
+				14210248214BA162001D6904 /* Products */,
+				C7E14471E937338B02211CE2 /* Pods */,
+				2B9C392AB03503194C3035B7 /* Frameworks */,
+				F1D53A9A00ED5185D4605419 /* Modules */,
+			);
+			sourceTree = "<group>";
+		};
+		14210248214BA162001D6904 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14210247214BA162001D6904 /* Ragnarok.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14210249214BA162001D6904 /* Ragnarok */ = {
+			isa = PBXGroup;
+			children = (
+				1421024A214BA162001D6904 /* AppDelegate.swift */,
+				1421024E214BA162001D6904 /* Main.storyboard */,
+				14210251214BA163001D6904 /* Assets.xcassets */,
+				14210253214BA163001D6904 /* LaunchScreen.storyboard */,
+				14210256214BA163001D6904 /* Info.plist */,
+				143BA099214BACC60091A807 /* ApplicationAssembly.swift */,
+			);
+			path = Ragnarok;
+			sourceTree = "<group>";
+		};
+		2B9C392AB03503194C3035B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB76FA7793F4FD7022796522 /* Pods_Ragnarok.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DAFEFC7C06D5772B648D9EC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5534DD32D259E9AB0FC15CFE /* FightInteractorInput.swift */,
+				09C02241593256C61A3E5CC3 /* FightInteractorOutput.swift */,
+				6CD76111365F2D3709032AC9 /* FightInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3FFBBD0193FF1E130D65C34A /* Fight */ = {
+			isa = PBXGroup;
+			children = (
+				6F09A13C5403C32CFD44DBC9 /* View */,
+				5BECDB8CE18D9251D687C1CC /* Storyboard */,
+				D9018076025302FE347B0D90 /* Presenter */,
+				3DAFEFC7C06D5772B648D9EC /* Interactor */,
+				455296338A6A761CD0825C18 /* Router */,
+				6BCAF6A749691B6502BC8A84 /* Assembly */,
+			);
+			path = Fight;
+			sourceTree = "<group>";
+		};
+		455296338A6A761CD0825C18 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F9FA2AB235D924AA2AC8A856 /* FightRouterInput.swift */,
+				EA25CD77606D5F92EB1D2162 /* FightRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5BECDB8CE18D9251D687C1CC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				010C79A8BE2833804DB8CC2C /* FightModule.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		6BCAF6A749691B6502BC8A84 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				132A8BB0FF3734092D5E0F39 /* FightAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		6F09A13C5403C32CFD44DBC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8EFF02ED033FE722535BE4DD /* FightViewInput.swift */,
+				730402989816A0CBF9216147 /* FightViewOutput.swift */,
+				B5AC4F14F80A05CFDDBC150C /* FightViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C7E14471E937338B02211CE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21F2A9B62EA458CD62CCADCE /* Pods-Ragnarok.debug.xcconfig */,
+				4C2B3082CF0C4DE11AD8E8F7 /* Pods-Ragnarok.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D9018076025302FE347B0D90 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C547ADCB701776E73A28BE44 /* FightModuleInput.swift */,
+				FF609E191468D3BC83991B9B /* FightPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F1D53A9A00ED5185D4605419 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3FFBBD0193FF1E130D65C34A /* Fight */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14210246214BA162001D6904 /* Ragnarok */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14210259214BA163001D6904 /* Build configuration list for PBXNativeTarget "Ragnarok" */;
+			buildPhases = (
+				6D35F47CB424245ECC2B3D19 /* [CP] Check Pods Manifest.lock */,
+				14210243214BA162001D6904 /* Sources */,
+				14210244214BA162001D6904 /* Frameworks */,
+				14210245214BA162001D6904 /* Resources */,
+				93CF068CD2F498725C493E26 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ragnarok;
+			productName = Ragnarok;
+			productReference = 14210247214BA162001D6904 /* Ragnarok.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1421023F214BA162001D6904 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Riley Usagi";
+				TargetAttributes = {
+					14210246214BA162001D6904 = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 14210242214BA162001D6904 /* Build configuration list for PBXProject "Ragnarok" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1421023E214BA162001D6904;
+			productRefGroup = 14210248214BA162001D6904 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14210246214BA162001D6904 /* Ragnarok */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14210245214BA162001D6904 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14210255214BA163001D6904 /* LaunchScreen.storyboard in Resources */,
+				14210252214BA163001D6904 /* Assets.xcassets in Resources */,
+				14210250214BA162001D6904 /* Main.storyboard in Resources */,
+				320DB1A536DD01EAD85348E9 /* FightModule.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D35F47CB424245ECC2B3D19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ragnarok-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93CF068CD2F498725C493E26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ragnarok/Pods-Ragnarok-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LightRoute/LightRoute.framework",
+				"${BUILT_PRODUCTS_DIR}/Magic/Magic.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LightRoute.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Magic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ragnarok/Pods-Ragnarok-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14210243214BA162001D6904 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1421024B214BA162001D6904 /* AppDelegate.swift in Sources */,
+				143BA09A214BACC60091A807 /* ApplicationAssembly.swift in Sources */,
+				9BF5A0868572D53F21E08891 /* FightViewInput.swift in Sources */,
+				6723274774719D0CC0982BE8 /* FightViewOutput.swift in Sources */,
+				7207C84E4184999D42E62CD3 /* FightViewController.swift in Sources */,
+				829909020A1C90FAA8DC9068 /* FightModuleInput.swift in Sources */,
+				D2E249B544BBF0D7F019AE98 /* FightPresenter.swift in Sources */,
+				523D5F41164334A79595F6C6 /* FightInteractorInput.swift in Sources */,
+				53CF50931F59740688E15D67 /* FightInteractorOutput.swift in Sources */,
+				A29BCC282AC964E2664A27AF /* FightInteractor.swift in Sources */,
+				B5A74DF622282C099E0F7463 /* FightRouterInput.swift in Sources */,
+				864A894E8EEF967AA8E5CB75 /* FightRouter.swift in Sources */,
+				598B8FBC5D88C537735424E0 /* FightAssembly.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1421024E214BA162001D6904 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1421024F214BA162001D6904 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14210253214BA163001D6904 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14210254214BA163001D6904 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14210257214BA163001D6904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		14210258214BA163001D6904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1421025A214BA163001D6904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21F2A9B62EA458CD62CCADCE /* Pods-Ragnarok.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Ragnarok/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Elanice.Ragnarok;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1421025B214BA163001D6904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C2B3082CF0C4DE11AD8E8F7 /* Pods-Ragnarok.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Ragnarok/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Elanice.Ragnarok;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14210242214BA162001D6904 /* Build configuration list for PBXProject "Ragnarok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14210257214BA163001D6904 /* Debug */,
+				14210258214BA163001D6904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14210259214BA163001D6904 /* Build configuration list for PBXNativeTarget "Ragnarok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1421025A214BA163001D6904 /* Debug */,
+				1421025B214BA163001D6904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1421023F214BA162001D6904 /* Project object */;
+}

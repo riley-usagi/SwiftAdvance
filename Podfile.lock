@@ -1,0 +1,43 @@
+PODS:
+  - LightRoute (2.1.19)
+  - Magic (3.0.3)
+  - Realm (3.9.0):
+    - Realm/Headers (= 3.9.0)
+  - Realm/Headers (3.9.0)
+  - Reusable (4.0.3):
+    - Reusable/Storyboard (= 4.0.3)
+    - Reusable/View (= 4.0.3)
+  - Reusable/Storyboard (4.0.3)
+  - Reusable/View (4.0.3)
+  - Swinject (2.4.1)
+  - SwinjectStoryboard (2.0.2):
+    - Swinject (~> 2.4)
+
+DEPENDENCIES:
+  - LightRoute
+  - Magic
+  - Realm
+  - Reusable
+  - Swinject
+  - SwinjectStoryboard
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - LightRoute
+    - Magic
+    - Realm
+    - Reusable
+    - Swinject
+    - SwinjectStoryboard
+
+SPEC CHECKSUMS:
+  LightRoute: a61a8167568ea238e62780c2172d9a9193a4b482
+  Magic: 4cf0cae9f1c7c1f89332a23737309fa49b422796
+  Realm: 3d36f208bf3aff8335dc3298742140182bde4edb
+  Reusable: 12b67a60e1f3e8c523cc910795dab733f58fbc7e
+  Swinject: f7f15a9672e99328c1f07f277091087917215700
+  SwinjectStoryboard: 365698aec11b57c6b14a3c1f52d0308759d377bf
+
+PODFILE CHECKSUM: 690890f2d2c4ffb484c27a042c885fde4932161f
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,33 @@
+//
+//  {{ prefix }}{{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import Quick
+import Nimble
+@testable import {{ module_info.project_name }}
+
+class {{ module_info.name }}PresenterSpec: QuickSpec {
+
+    override func spec() {
+
+    }
+
+    class MockInteractor: {{ module_info.name }}InteractorInput {
+
+    }
+
+    class MockRouter: {{ module_info.name }}RouterInput {
+
+    }
+
+    class MockViewController: {{ module_info.name }}ViewInput {
+
+        func setupInitialState() {
+
+        }
+    }
+}
