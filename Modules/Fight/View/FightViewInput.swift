@@ -1,9 +1,9 @@
 protocol FightViewInput: class {
-
-    /**
-        @author Riley Usagi
-        Setup initial state of the view
-    */
-
-    func setupInitialState()
+  /// Настраивает начальное состояние Экрана
+  func setupInitialState()
+  
+  /// Вывести текст на экран
+  ///
+  /// - Parameter content: Текст
+  func show(content: String)
 }

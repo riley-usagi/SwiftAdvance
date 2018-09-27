@@ -1,24 +1,28 @@
 import Swinject
 import SwinjectStoryboard
 
+
+/// Регистрация сборщиков
 final class ApplicationAssembly {
   
-  //Use default dependency
+  /// Список зарегистрированных сборщиков всех модулей
   class var assembler: Assembler {
     return Assembler([FightModuleAssembly()])
   }
   
   var assembler: Assembler
   
-  //If you want use custom Assembler
+  /// Стандартный сборщик. Можно заменить своими.
+  ///
+  /// - Parameter assemblies: список сборщиков
   init(with assemblies: [Assembly]) {
     assembler = Assembler(assemblies)
   }
 }
 
-//Inject dependency in Main Storyboard
+
+// MARK: - Передаче ассемблера между сторибордами
 extension SwinjectStoryboard {
-  
   @objc class func setup() {
     defaultContainer = ApplicationAssembly.assembler.resolver as! Container
   }

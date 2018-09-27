@@ -1,7 +1,8 @@
 import UIKit
 import Reusable
+import Magic
 
-final class FightViewController: UIViewController, FightViewInput, StoryboardSceneBased {
+final class FightViewController: UIViewController, StoryboardSceneBased {
   
   @IBOutlet weak var monsterNameLabel: UILabel!
   
@@ -9,13 +10,19 @@ final class FightViewController: UIViewController, FightViewInput, StoryboardSce
   
   var output: FightViewOutput!
   
-  // MARK: Life cycle
   override func viewDidLoad() {
     super.viewDidLoad()
+
     output.viewIsReady()
   }
   
-  // MARK: FightViewInput
   func setupInitialState() {
+    show(content: "Poring!!")
+  }
+}
+
+extension FightViewController: FightViewInput {
+  func show(content: String) {
+    monsterNameLabel.text = content
   }
 }

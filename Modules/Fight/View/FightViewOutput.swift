@@ -1,9 +1,4 @@
 protocol FightViewOutput {
-  
-  /**
-   @author Riley Usagi
-   Notify presenter that view is ready
-   */
-  
+  /// Оповещает Представителя, что Экран загружен
   func viewIsReady()
 }
